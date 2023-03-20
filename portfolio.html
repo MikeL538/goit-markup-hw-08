@@ -1,15 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
+    <header>
+        <!--Page top-->
+        <a href="index.html" class="men-hover"><span class="web">Web</span><span class="studio-up">Studio</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="font-500 menu-hover size-14 height_114">Agencja</a></li>
+                <li><a href="portfolio.html" class="font-500 menu-hover size-14 height_114">Portfolio</a></li>
+                <li><a href="#" class="font-500 menu-hover size-14 height_114">Kontakty</a></li>
+            </ul>
+        </nav>
+        <p><a href="mailto:info@devstudio.com" class="font-500 contact size-14 height_114">info@devstudio.com</a></p>
+        <p><a href="tel:48111111111" class="font-500 contact size-14 height_114">+48 111 111 111</a></p>
+    </header>
 
+    <main>
+        <section>
+            <!--Filters-->
+            <div>
+                <ul>
+                    <li><button type="button" class="btn-portfolio size-16 font-500 height-163">Wszystkie</button></li>
+                    <li><button type="button" class="btn-portfolio size-16 font-500 height-163">Strony</button></li>
+                    <li><button type="button" class="btn-portfolio size-16 font-500 height-163">Aplikacje</button></li>
+                    <li><button type="button" class="btn-portfolio size-16 font-500 height-163">Dizajn</button></li>
+                    <li><button type="button" class="btn-portfolio size-16 font-500 height-163">Marketing</button></li>
+                </ul>
+            </div>
+
+            <!--Projects-->
+            <div>
+                <ul>
+                    <li>
+                        <img src="images/technocrack.jpg"
+                            alt="Screen ze strony biznesowej pokazujący pracowników firmy. Widać na nim trzy osoby oraz opis czym się zajmują."
+                            width="370" height="294" />
+                        <h3 class="size-18 height-200">Technocrack</h3>
+                        <p class="size-16 color-gray height-188">Strona internetowa</p>
+                    </li>
+
+                    <li>
+                        <img src="images/grafika_new_orlean_vs_golden_star.jpg"
+                            alt="Grafika przedstawiająca dwóch koszywkarzy podczas rozgrywki." width="370"
+                            height="294" />
+                        <h3 class="size-18 height-200">Grafika New Orlean vs Golden Star</h3>
+                        <p class="size-16 color-gray height-188">Dizajn</p>
+                    </li>
+
+                    <li>
+                        <img src="images/restauracja_seafood.jpg" alt="Logo restauracji SeaFood" width="370"
+                            height="294" />
+                        <h3 class="size-18 height-200">Restauracja Seafood</h3>
+                        <p class="size-16 color-gray height-188">Aplikacja</p>
+                    </li>
+
+                    <li>
+                        <img src="images/projekt_prime.jpg" alt="Słuchawki nauszne." width="370" height="294" />
+                        <h3 class="size-18 height-200">Projekt Prime</h3>
+                        <p class="size-16 color-gray height-188">Marketing</p>
+                    </li>
+
+                    <li>
+                        <img src="images/project_boxes.jpg" alt="Dwa pudełka" width="370" height="294" />
+                        <h3 class="size-18 height-200">Projekt Boxes</h3>
+                        <p class="size-16 color-gray height-188">Aplikacja</p>
+                    </li>
+
+                    <li>
+                        <img src="images/inspiration_has_no_borders.jpg"
+                            alt="Zdjęcie przedstawia stworzoną międzynarodową stronę internetową." width="370"
+                            height="294" />
+                        <h3 class="size-18 height-200">Inspiration has no Borders</h3>
+                        <p class="size-16 color-gray height-188">Strona internetowa</p>
+                    </li>
+
+                    <li>
+                        <img src="images/magazyn_limited_edition.jpg" alt="Zdjęcie zaprojektowanego magazynu."
+                            width="370" height="294" />
+                        <h3 class="size-18 height-200">Magazyn Limited Edition</h3>
+                        <p class="size-16 color-gray height-188">Dizajn</p>
+                    </li>
+
+                    <li>
+                        <img src="images/project_lab.jpg" alt="Zdjęcie etykiety Project LAB." width="370"
+                            height="294" />
+                        <h3 class="size-18 height-200">Projekt LAB</h3>
+                        <p class="size-16 color-gray height-188">Marketing</p>
+                    </li>
+
+                    <li>
+                        <img src="images/growing_business.jpg" alt="Zdjęcie przedstawiające aplikację Growing Business."
+                            width="370" height="294" />
+                        <h3 class="size-18 height-200">Growing Business</h3>
+                        <p class="size-16 color-gray height-188">Aplikacja</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <!--TYMCZASOWY BACKGROUND-COLOR ABY BYŁO WIDAĆ ADRES I STUDIO-->
+    <footer style="background-color: #2F303A;">
+        <!--Page bottom, address-->
+        <a href="index.html" class="pink-hover"><span class="web">Web</span><span
+                class="studio-bottom">Studio</span></a>
+        <address>
+            <ul>
+                <li class="street size-14">m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li class="size-14"><a href="mailto:info@example.com" class="contact">info@example.com</a>
+                </li>
+                <li class="size-14"><a href="tel:48111111111" class="contact">+48 111 111
+                        111</a></li>
+            </ul>
+        </address>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+/*Head, h1 and footer styling */
+
+.web {
+    color: #2196F3;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.studio-up {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.studio-bottom {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.contact {
+    color: #757575;
+    text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+    color: #2196F3;
+}
+
+.street {
+    color: #ffffff;
+}
+
+.menu-hover {
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu-hover:hover,
+.menu-hover:focus {
+    color: #2196F3;
+}
+
+
+.main-header {
+    font-size: 44px;
+    color: #ffffff;
+    background-color: #2F303A;
+    font-weight: 900;
+    line-height: 1.36;
+}
+
+/* Studio button styling */
+
+.btn-studio {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+    line-height: 1.88;
+}
+
+.btn-studio:hover,
+.btn-studio:focus {
+    color: #000000;
+    background-color: #757575;
+}
+
+/* Portfolio buttons styling */
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    color: white;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+/*Font-sizes section*/
+
+.size-36 {
+    font-size: 36px;
+}
+
+.size-26 {
+    font-size: 26px;
+}
+
+.size-18 {
+    font-size: 18px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+/* Colors */
+
+.color-gray {
+    color: #757575;
+}
+
+/* Font weights */
+
+.font-500 {
+    font-weight: 500;
+}
+
+/* Line heights */
+
+.height-114 {
+    line-height: 1.14;
+}
+
+.height-171 {
+    line-height: 1.71;
+}
+
+.height-086 {
+    line-height: 0.86;
+}
+
+.height-188 {
+    line-height: 1.88;
+}
+
+.height-163 {
+    line-height: 1.63;
+}
+
+.height-200 {
+    line-height: 2;
+}
