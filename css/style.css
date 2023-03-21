@@ -4,6 +4,10 @@ body {
     background-color: #FFFFFF;
 }
 
+.no-decoration-list {
+    list-style: none;
+}
+
 /*Head, h1 and footer styling */
 
 .web {
@@ -63,6 +67,10 @@ body {
     line-height: 1.36;
 }
 
+.font-normal {
+    font-style: normal;
+}
+
 /* Studio button styling */
 
 .btn-studio {
@@ -70,15 +78,16 @@ body {
     background-color: #2196F3;
     cursor: pointer;
     line-height: 1.88;
-}
-
-.btn-studio:hover,
-.btn-studio:focus {
-    color: #000000;
-    background-color: #757575;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* Portfolio buttons styling */
+
+.btn-portfolio {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
