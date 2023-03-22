@@ -40,6 +40,10 @@ ul.left-top-page>li:first-child {
     padding-left: 93px;
 }
 
+ul.left-top-page>li:last-child {
+    padding-right: 254px;
+}
+
 /*Positioning Studio main */
 
 .section-main-header {
