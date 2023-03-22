@@ -3,6 +3,10 @@ body {
     color: #212121;
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,22 +22,22 @@ body {
 
 .container-header {
     display: flex;
-    align-items: center;
     padding-top: 24px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-nav ul {
+.left-top-page {
     display: flex;
-    gap: 46px;
-    align-items: flex-start;
+    padding-right: 50px;
 }
 
-.header-p1 {
-    padding-left: 321px;
+ul.left-top-page>li>a {
+    padding-right: 46px;
 }
 
-.header-p2 {
-    padding-left: 50px;
+ul.left-top-page>li:first-child {
+    padding-left: 93px;
 }
 
 /*Positioning Studio main */
@@ -51,6 +55,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     padding-top: 94px;
+    margin-top: 0;
 }
 
 .offer-header {
@@ -66,13 +71,17 @@ nav ul {
 
 .our-team-section {
     background-color: #F5F4FA;
+}
+
+.our-team-div {
+    background-color: #F5F4FA;
     margin-top: 94px;
     margin-bottom: -16px;
 }
 
 .our-team-header {
     text-align: center;
-    padding-top: 188px;
+    padding-top: 94px;
 }
 
 .our-team-list {
@@ -88,7 +97,8 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 5px;
-    padding-top: 126px;
+    padding-top: 94px;
+    margin: 0;
 }
 
 .projects {
@@ -97,13 +107,13 @@ nav ul {
     justify-content: space-between;
     text-align: left;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 ul.projects>li {
     border: 1px solid #EEEEEE;
-
+    margin-bottom: 30px;
 }
-
 
 /* Positioning footer */
 
@@ -113,7 +123,7 @@ ul.projects>li {
     justify-content: flex-start;
     align-items: flex-start;
     height: 252px;
-    padding-top: 94px;
+    padding-top: 60px;
     background-color: #2F303A;
 
 }
@@ -130,7 +140,7 @@ ul.projects>li {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    padding-left: 35px;
+    padding-left: 40px;
 }
 
 .studio-up {
@@ -139,7 +149,6 @@ ul.projects>li {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    padding-right: 93px;
 }
 
 .studio-bottom {
