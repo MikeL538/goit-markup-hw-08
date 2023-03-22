@@ -1,11 +1,125 @@
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #212121;
-    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fff;
 }
 
 .no-decoration-list {
     list-style: none;
+}
+
+/*Positioning header*/
+
+.container-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+
+nav ul {
+    display: flex;
+    gap: 46px;
+    align-items: flex-start;
+}
+
+.header-p1 {
+    padding-left: 321px;
+}
+
+.header-p2 {
+    padding-left: 50px;
+}
+
+/*Positioning Studio main */
+
+.section-main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2F303A;
+    height: 600px;
+
+}
+
+.lorem-list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 94px;
+}
+
+.offer-header {
+    text-align: center;
+    padding-top: 94px;
+}
+
+.offer-pictures {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.our-team-section {
+    background-color: #F5F4FA;
+    margin-top: 94px;
+    margin-bottom: -16px;
+}
+
+.our-team-header {
+    text-align: center;
+    padding-top: 188px;
+}
+
+.our-team-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 0;
+}
+
+/*Positioning Portfolio main */
+
+.filter-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 126px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 50px;
+}
+
+ul.projects>li {
+    border: 1px solid #EEEEEE;
+
+}
+
+
+/* Positioning footer */
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 252px;
+    padding-top: 94px;
+    background-color: #2F303A;
+
+}
+
+.background-footer {
+    background-color: #2F303A;
 }
 
 /*Head, h1 and footer styling */
@@ -16,6 +130,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    padding-left: 35px;
 }
 
 .studio-up {
@@ -24,6 +139,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    padding-right: 93px;
 }
 
 .studio-bottom {
@@ -62,9 +178,12 @@ body {
 .main-header {
     font-size: 44px;
     color: #ffffff;
-    background-color: #2F303A;
     font-weight: 900;
     line-height: 1.36;
+    margin-top: 200px;
+    display: flex;
+    width: 696px;
+    text-align: center;
 }
 
 .font-normal {

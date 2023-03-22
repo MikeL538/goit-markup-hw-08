@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,124 +21,149 @@
 </head>
 
 <body>
-    <header>
-        <!--Page top-->
-        <a href="index.html" class="menu-hover"><span class="web">Web</span><span class="studio-up">Studio</span></a>
-        <nav>
-            <ul class="no-decoration-list">
-                <li><a href="index.html" class="font-500 menu-hover size-14 height-114">Agencja</a></li>
-                <li><a href="portfolio.html" class="font-500 menu-hover size-14 height-114">Portfolio</a></li>
-                <li><a href="#" class="font-500 menu-hover size-14 height-114">Kontakty</a></li>
-            </ul>
-        </nav>
-        <p><a href="mailto:info@devstudio.com" class="font-500 contact size-14 height-114">info@devstudio.com</a></p>
-        <p><a href="tel:48111111111" class="font-500 contact size-14 height-114">+48 111 111 111</a></p>
+    <div class="container">
+        <header>
+            <div class="container-header">
+                <!--Page top-->
+                <a href="index.html" class="menu-hover"><span class="web">Web</span><span
+                        class="studio-up">Studio</span></a>
+                <nav>
+                    <ul class="no-decoration-list left-top-page">
+                        <li><a href="index.html" class="font-500 menu-hover size-14 height-114">Agencja</a></li>
+                        <li><a href="portfolio.html" class="font-500 menu-hover size-14 height-114">Portfolio</a></li>
+                        <li><a href="#" class="font-500 menu-hover size-14 height-114">Kontakty</a></li>
+                    </ul>
+                </nav>
+                <p class="header-p1"><a href="mailto:info@devstudio.com"
+                        class="font-500 contact size-14 height-114">info@devstudio.com</a>
+                </p>
+                <p class="header-p2"><a href="tel:48111111111" class="font-500 contact size-14 height-114">+48 111 111
+                        111</a>
+                </p>
+            </div>
+    </div>
     </header>
 
     <main>
         <!--Page Title with offer button-->
-        <section>
+        <section class="section section-main-header">
             <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="btn-studio size-16 font-700">Zamów usługę</button>
+            <button type="button" class="btn-studio size-16 font-700 btn-main-header">Zamów usługę</button>
         </section>
+        <div class="container">
+            <section class="section">
+                <!--Lorem Ipsum, probably some description -->
 
-        <section>
-            <!--Lorem Ipsum, probably some description -->
-            <div class="size-14">
-                <ul class="no-decoration-list">
-                    <li>
-                        <h2 class="height-114">LOREM IPSUM</h2>
-                        <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcu
-                            sem. Sed non sodales
-                            dui. Interdum et malesuada</p>
+                <div class="size-14">
+                    <ul class="no-decoration-list lorem-list">
+                        <li>
+                            <h2 class="height-114">LOREM IPSUM</h2>
+                            <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Nam
+                                vel
+                                arcu
+                                sem. Sed non sodales
+                                dui. Interdum et malesuada</p>
+                        </li>
+                        <li>
+                            <h2 class="height-114">LOREM IPSUM</h2>
+                            <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Nam
+                                vel
+                                arcu
+                                sem. Sed non sodales
+                                dui. Interdum et malesuada</p>
+                        </li>
+                        <li>
+                            <h2 class="height-114">LOREM IPSUM</h2>
+                            <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Nam
+                                vel
+                                arcu
+                                sem. Sed non sodales
+                                dui. Interdum et malesuada</p>
+                        </li>
+                        <li>
+                            <h2 class="height-114">LOREM IPSUM</h2>
+                            <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Nam
+                                vel
+                                arcu
+                                sem. Sed non sodales
+                                dui. Interdum et malesuada</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--What we offer-->
+                <div>
+                    <h2 class="size-36 height-086 offer-header">Czym się zajmujemy</h2>
+                    <ul class="no-decoration-list offer-pictures">
+                        <li><img src="images/programming_on_laptop.jpg" alt="A person typing code on the laptop."
+                                width="370" height="294" />
+                        </li>
+                        <li><img src="images/mobile_programming.jpg" alt="A person writes a code for mobile devices."
+                                width="370" height="294" />
+                        </li>
+                        <li><img src="images/color_programming.jpg" alt="A person creates colorful application."
+                                width="370" height="294" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!--Our team-->
+            <section class="section our-team-section">
+                <h2 class="size-36 height-086 our-team-header">Nasz Zespół</h2>
+                <ul class="no-decoration-list our-team-list">
+                    <li><img src="images/product_designer.jpg" alt="Picture of one of our employees - John Doe."
+                            width="270" height="260" />
+                        <h3 class="size-16 font-500 height-188">John Doe</h3>
+                        <p class="size-16 color-gray height-188">Product Designer</p>
                     </li>
-                    <li>
-                        <h2 class="height-114">LOREM IPSUM</h2>
-                        <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcu
-                            sem. Sed non sodales
-                            dui. Interdum et malesuada</p>
+                    <li><img src="images/frontend_developer.jpg" alt="Picture of one of our employees - John Doe."
+                            width="270" height="260" />
+                        <h3 class="size-16 font-500 height-188">John Doe</h3>
+                        <p class="size-16 color-gray height-188">Frontend Developer</p>
                     </li>
-                    <li>
-                        <h2 class="height-114">LOREM IPSUM</h2>
-                        <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcu
-                            sem. Sed non sodales
-                            dui. Interdum et malesuada</p>
+                    <li><img src="images/marketing.jpg" alt="Picture of one of our employees - John Doe." width="270"
+                            height="260" />
+                        <h3 class="size-16 font-500 height-188">John Doe</h3>
+                        <p class="size-16 color-gray height-188">Marketing</p>
                     </li>
-                    <li>
-                        <h2 class="height-114">LOREM IPSUM</h2>
-                        <p class="color-gray height-171">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcu
-                            sem. Sed non sodales
-                            dui. Interdum et malesuada</p>
+                    <li><img src="images/ui_designer.jpg" alt="Picture of one of our employees - John Doe." width="270"
+                            height="260" />
+                        <h3 class="size-16 font-500 height-188">John Doe</h3>
+                        <p class="size-16 color-gray height-188">UI Designer</p>
                     </li>
                 </ul>
-            </div>
-
-            <!--What we offer-->
-            <div>
-                <h2 class="size-36 height-086">Czym się zajmujemy</h2>
-                <ul class="no-decoration-list">
-                    <li><img src="images/programming_on_laptop.jpg" alt="A person typing code on the laptop."
-                            width="370" height="294" />
-                    </li>
-                    <li><img src="images/mobile_programming.jpg" alt="A person writes a code for mobile devices."
-                            width="370" height="294" />
-                    </li>
-                    <li><img src="images/color_programming.jpg" alt="A person creates colorful application." width="370"
-                            height="294" />
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!--Our team-->
-        <section>
-            <h2 class="size-36 height-086">Nasz Zespół</h2>
-            <ul class="no-decoration-list">
-                <li><img src="images/product_designer.jpg" alt="Picture of one of our employees - John Doe." width="270"
-                        height="260" />
-                    <h3 class="size-16 font-500 height-188">John Doe</h3>
-                    <p class="size-16 color-gray height-188">Product Designer</p>
-                </li>
-                <li><img src="images/frontend_developer.jpg" alt="Picture of one of our employees - John Doe."
-                        width="270" height="260" />
-                    <h3 class="size-16 font-500 height-188">John Doe</h3>
-                    <p class="size-16 color-gray height-188">Frontend Developer</p>
-                </li>
-                <li><img src="images/marketing.jpg" alt="Picture of one of our employees - John Doe." width="270"
-                        height="260" />
-                    <h3 class="size-16 font-500 height-188">John Doe</h3>
-                    <p class="size-16 color-gray height-188">Marketing</p>
-                </li>
-                <li><img src="images/ui_designer.jpg" alt="Picture of one of our employees - John Doe." width="270"
-                        height="260" />7
-                    <h3 class="size-16 font-500 height-188">John Doe</h3>
-                    <p class="size-16 color-gray height-188">UI Designer</p>
-                </li>
-            </ul>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <!--TYMCZASOWY BACKGROUND-COLOR ABY BYŁO WIDAĆ ADRES I STUDIO-->
-    <footer style="background-color: #2F303A;">
-        <!--Page bottom, address-->
-        <a href="#" class="menu-hover"><span class="web">Web</span><span class="studio-bottom">Studio</span></a>
-        <address class="font-normal">
-            <ul class="no-decoration-list">
-                <li class="street size-14 height-171">m. Warszawa, Aleje Jerozolimskie 21</li>
-                <li class="size-14 height-171"><a href="mailto:info@example.com" class="contact">info@example.com</a>
-                </li>
-                <li class="size-14 height-171"><a href="tel:48111111111" class="contact">+48 111 111
-                        111</a></li>
-            </ul>
-        </address>
+    <footer>
+        <section class="background-footer">
+            <div class="container container-footer">
+                <!--Page bottom, address-->
+                <a href="index.html" class="menu-hover"><span class="web">Web</span><span
+                        class="studio-bottom">Studio</span></a>
+                <address class="font-normal">
+                    <ul class="no-decoration-list">
+                        <li class="street size-14 height-171">m. Warszawa, Aleje Jerozolimskie 21</li>
+                        <li class="size-14 height-171"><a href="mailto:info@example.com"
+                                class="contact">info@example.com</a>
+                        </li>
+                        <li class="size-14 height-171"><a href="tel:48111111111" class="contact">+48 111 111
+                                111</a></li>
+                    </ul>
+                </address>
+            </div>
+        </section>
     </footer>
 </body>
 
