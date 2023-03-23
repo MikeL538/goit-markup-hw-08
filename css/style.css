@@ -3,6 +3,7 @@ body {
     color: #212121;
     width: 1600px;
     margin: 0 auto;
+
 }
 
 header {
@@ -18,6 +19,12 @@ header {
 .no-dots {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Index&Porfolio-Header styling */
@@ -67,11 +74,6 @@ header {
 
 /* Index&Porftolio header positioning */
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .container-header {
     height: 80px;
     display: flex;
@@ -88,18 +90,15 @@ header {
 div.container-header-menu>nav>ul>li {
     display: inline-block;
     padding-right: 46px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-div.container-header-menu>nav>ul>li:last-child {
-    padding-right: 0;
 }
 
 .container-header-contact {
     display: flex;
     align-items: center;
-    padding-left: 50px;
+}
+
+div.container-header-contact>p {
+    margin: 0;
 }
 
 div.container-header-contact>p {
@@ -117,6 +116,7 @@ div.container-header-contact>p {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .btn-studio {
@@ -135,6 +135,7 @@ div.container-header-contact>p {
 ul.lorem-list>li>h2 {
     font-size: 14px;
     line-height: 1.14;
+    margin: 0;
 }
 
 ul.lorem-list>li>p {
@@ -142,6 +143,7 @@ ul.lorem-list>li>p {
     color: #757575;
     line-height: 1.71;
     padding-top: 10px;
+    margin: 0;
 }
 
 .offer-header {
@@ -178,6 +180,10 @@ ul.our-team-list>li>p {
     flex-direction: column;
 }
 
+.btn-studio {
+    margin-top: 30px;
+}
+
 .lorem-list {
     display: flex;
     justify-content: space-between;
@@ -199,22 +205,27 @@ ul.lorem-list>li {
     justify-content: space-between;
     gap: 30px;
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .our-team-section {
     background-color: #F5F4FA;
     width: 1600px;
     height: 648px;
-    margin-top: 94px;
+    padding-top: 0;
 }
 
 .our-team-header {
     text-align: center;
+    padding-top: 94px;
+    margin: 0;
 }
 
 .our-team-ppl {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
+    margin: 0;
 }
 
 ul.our-team-ppl>li {
@@ -270,6 +281,7 @@ ul.projects>li>p {
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
 }
 
 .btn-portfolio {
@@ -279,9 +291,9 @@ ul.projects>li>p {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
     gap: 30px;
-    margin-top: 50px;
+    margin: 0;
 }
 
 ul.projects>li {
@@ -317,6 +329,7 @@ footer {
 .contact-bottom {
     font-style: normal;
     text-decoration: none;
+    margin: 0;
 }
 
 .contact-bottom-street {
@@ -335,6 +348,10 @@ footer {
 .contact-bottom>li>a:hover,
 .contact-bottom>li>a:focus {
     color: #2196F3;
+}
+
+ul.contact-bottom a[href^="mailto:"] {
+    text-decoration: underline;
 }
 
 /* Index&Portfolio footer positioning*/
