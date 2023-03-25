@@ -315,12 +315,14 @@
     div.projects-border>h3 {
         margin: 0;
         padding: 20px 0 20px 24px;
+        letter-spacing: 0.06em;
     }
 
     div.projects-border>p {
         margin: 0px;
         padding: 0 0 20px 24px;
         color: #757575;
+        letter-spacing: 0.03em;
     }
 
     /*Index&Portfolio-footer styling */
