@@ -229,7 +229,7 @@
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         gap: 30px;
-        height: 368px;
+        height: 428px;
         text-align: center;
         width: 270px;
     }
@@ -371,6 +371,11 @@
 
     /*----------Homework #4----------*/
 
+    /*Header*/
+
+    .contact-top-icon {
+        margin-right: 10px;
+    }
 
     /* Index Main */
     .section-main-header {
@@ -378,6 +383,10 @@
         background-repeat: no-repeat;
         background-position: center;
         max-width: 1600px;
+    }
+
+    ul.lorem-list>li>h2 {
+        margin-top: 30px;
     }
 
     .our-clients-header {
