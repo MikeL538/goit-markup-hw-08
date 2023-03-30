@@ -351,7 +351,7 @@
 
     /* Index&Portfolio footer positioning*/
 
-    .container-footer {
+    .container-footer-address {
         display: flex;
         flex-direction: column;
         height: 252px;
@@ -365,12 +365,51 @@
         margin-top: 20px;
     }
 
-    div.container-footer>a {
+    div.container-footer-address>a {
         margin-top: 60px;
     }
 
-    /*------Homework #4------*/
+    /*----------Homework #4----------*/
 
-    ul.lorem-list>li>svg {
-        margin-bottom: 30px;
+
+    /* Index Main */
+    .section-main-header {
+        background-image: url('../images/h1_background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1600px;
+    }
+
+    .our-clients-header {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .our-clients-logos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* footers */
+
+    .container-footer {
+        display: flex;
+        align-content: center;
+    }
+
+    .join-us {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .join-us-btns {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.join-us-btns>li {
+        margin-left: 10px;
     }
