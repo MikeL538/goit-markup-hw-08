@@ -1,209 +1,289 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <!--Page top-->
-            <div class="container-header">
-                <div class=" container-header-menu">
-                    <a href="index.html" class="menu"><span class="web">Web</span><span
-                            class="studio-top">Studio</span></a>
-                    <nav>
-                        <ul class="no-dots">
-                            <li><a href="index.html" class="menu">Agencja</a></li>
-                            <li><a href="portfolio.html" class="menu">Portfolio</a></li>
-                            <li><a href="#" class="menu">Kontakty</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="container-header-contact">
-                    <p>
-                        <a href="mailto:info@devstudio.com" class="contact-top">
-                            <svg class="contact-top-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </p>
-                    <p>
-                        <a href="tel:48111111111" class="contact-top">
-                            <svg class="contact-top-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +48 111 111 111</a>
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <!--Page top-->
+        <div class="container-header">
+          <div class="container-header-menu">
+            <a href="index.html" class="menu"
+              ><span class="web">Web</span
+              ><span class="studio-top">Studio</span></a
+            >
+            <nav>
+              <ul class="no-dots">
+                <li><a href="index.html" class="menu">Agencja</a></li>
+                <li><a href="portfolio.html" class="menu">Portfolio</a></li>
+                <li><a href="#" class="menu">Kontakty</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="container-header-contact">
+            <p>
+              <a href="mailto:info@devstudio.com" class="contact-top">
+                <svg class="contact-top-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:48111111111" class="contact-top">
+                <svg class="contact-top-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="container">
-            <section class="section">
-                <!--Filters-->
-                <div>
-                    <ul class="no-dots filter-btns">
-                        <li><button type="button" class="btn-portfolio">Wszystkie</button>
-                        </li>
-                        <li><button type="button" class="btn-portfolio">Strony</button>
-                        </li>
-                        <li><button type="button" class="btn-portfolio">Aplikacje</button>
-                        </li>
-                        <li><button type="button" class="btn-portfolio">Dizajn</button>
-                        </li>
-                        <li><button type="button" class="btn-portfolio">Marketing</button>
-                        </li>
-                    </ul>
+      <div class="container">
+        <section class="section">
+          <!--Filters-->
+          <div>
+            <ul class="no-dots filter-btns">
+              <li>
+                <button type="button" class="btn-portfolio">Wszystkie</button>
+              </li>
+              <li>
+                <button type="button" class="btn-portfolio">Strony</button>
+              </li>
+              <li>
+                <button type="button" class="btn-portfolio">Aplikacje</button>
+              </li>
+              <li>
+                <button type="button" class="btn-portfolio">Dizajn</button>
+              </li>
+              <li>
+                <button type="button" class="btn-portfolio">Marketing</button>
+              </li>
+            </ul>
+          </div>
+
+          <!--Projects-->
+          <div>
+            <ul class="no-dots projects">
+              <li>
+                <img
+                  src="images/technocrack.jpg"
+                  alt="Screen ze strony biznesowej pokazujący pracowników firmy. Widać na nim trzy osoby oraz opis czym się zajmują."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Technocrack</h3>
+                  <p>Strona internetowa</p>
                 </div>
+              </li>
 
-                <!--Projects-->
-                <div>
-                    <ul class="no-dots projects">
-                        <li>
-                            <img src="images/technocrack.jpg"
-                                alt="Screen ze strony biznesowej pokazujący pracowników firmy. Widać na nim trzy osoby oraz opis czym się zajmują."
-                                width="370" height="294" />
-                            <div class="projects-border">
-                                <h3>Technocrack</h3>
-                                <p>Strona internetowa</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/grafika_new_orlean_vs_golden_star.jpg"
-                                alt="Grafika przedstawiająca dwóch koszywkarzy podczas rozgrywki." width="370"
-                                height="294" />
-                            <div class="projects-border">
-                                <h3>Grafika New Orlean vs Golden Star</h3>
-                                <p>Dizajn</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/restauracja_seafood.jpg" alt="Logo restauracji SeaFood" width="370"
-                                height="294" />
-                            <div class="projects-border">
-                                <h3>Restauracja Seafood</h3>
-                                <p>Aplikacja</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/projekt_prime.jpg" alt="Słuchawki nauszne." width="370" height="294" />
-                            <div class="projects-border">
-                                <h3>Projekt Prime</h3>
-                                <p>Marketing</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/project_boxes.jpg" alt="Dwa pudełka" width="370" height="294" />
-                            <div class="projects-border">
-                                <h3>Projekt Boxes</h3>
-                                <p>Aplikacja</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/inspiration_has_no_borders.jpg"
-                                alt="Zdjęcie przedstawia stworzoną międzynarodową stronę internetową." width="370"
-                                height="294" />
-                            <div class="projects-border">
-                                <h3>Inspiration has no Borders</h3>
-                                <p>Strona internetowa</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/magazyn_limited_edition.jpg" alt="Zdjęcie zaprojektowanego magazynu."
-                                width="370" height="294" />
-                            <div class="projects-border">
-                                <h3>Magazyn Limited Edition</h3>
-                                <p>Dizajn</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/project_lab.jpg" alt="Zdjęcie etykiety Project LAB." width="370"
-                                height="294" />
-                            <div class="projects-border">
-                                <h3>Projekt LAB</h3>
-                                <p>Marketing</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <img src="images/growing_business.jpg"
-                                alt="Zdjęcie przedstawiające aplikację Growing Business." width="370" height="294" />
-                            <div class="projects-border">
-                                <h3>Growing Business</h3>
-                                <p>Aplikacja</p>
-                            </div>
-                        </li>
-                    </ul>
+              <li>
+                <img
+                  src="images/grafika_new_orlean_vs_golden_star.jpg"
+                  alt="Grafika przedstawiająca dwóch koszywkarzy podczas rozgrywki."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Grafika New Orlean vs Golden Star</h3>
+                  <p>Dizajn</p>
                 </div>
-            </section>
-        </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/restauracja_seafood.jpg"
+                  alt="Logo restauracji SeaFood"
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Restauracja Seafood</h3>
+                  <p>Aplikacja</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/projekt_prime.jpg"
+                  alt="Słuchawki nauszne."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Projekt Prime</h3>
+                  <p>Marketing</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/project_boxes.jpg"
+                  alt="Dwa pudełka"
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Projekt Boxes</h3>
+                  <p>Aplikacja</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/inspiration_has_no_borders.jpg"
+                  alt="Zdjęcie przedstawia stworzoną międzynarodową stronę internetową."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Inspiration has no Borders</h3>
+                  <p>Strona internetowa</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/magazyn_limited_edition.jpg"
+                  alt="Zdjęcie zaprojektowanego magazynu."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Magazyn Limited Edition</h3>
+                  <p>Dizajn</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/project_lab.jpg"
+                  alt="Zdjęcie etykiety Project LAB."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Projekt LAB</h3>
+                  <p>Marketing</p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="images/growing_business.jpg"
+                  alt="Zdjęcie przedstawiające aplikację Growing Business."
+                  width="370"
+                  height="294"
+                />
+                <div class="projects-border">
+                  <h3>Growing Business</h3>
+                  <p>Aplikacja</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <div class="container container-footer">
-            <!--Page bottom, address-->
-            <div class="container-footer-address"> <a href="index.html" class="contact-bottom"><span
-                        class="web">Web</span><span class="studio-bottom">Studio</span></a>
-                <address>
-                    <ul class="no-dots contact-bottom">
-                        <li class="contact-bottom-street">m. Warszawa, Aleje Jerozolimskie 21</li>
-                        <li><a href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a href="tel:48111111111">+48 111 111 111</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="join-us">
-                <h4>DOŁĄCZ DO NAS</h4>
-                <ul class="join-us-icons">
-                    <li>
-                        <svg class="join-us-icon" width="44" height="44">
-                            <use href="./images/icons.svg#icon-instagram" x="12" y="12" width="20" height="20" fill="var(--clients-icons)"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="join-us-icon" width="44" height="44">
-                            <use href="./images/icons.svg#icon-twitter" x="12" y="12" width="20" height="20" fill="var(--clients-icons)"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="join-us-icon" width="44" height="44">
-                             <use href="./images/icons.svg#icon-facebook" x="12" y="12" width="20" height="20" fill="var(--clients-icons)"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="join-us-icon" width="44" height="44">
-                            <use href="./images/icons.svg#icon-linkedin" x="12" y="12" width="20" height="20" fill="var(--clients-icons)"></use>
-                        </svg>
-                    </li>
+      <div class="container container-footer">
+        <!--Page bottom, address-->
+        <div class="container-footer-address">
+          <a href="index.html" class="contact-bottom"
+            ><span class="web">Web</span
+            ><span class="studio-bottom">Studio</span></a
+          >
+          <address>
+            <ul class="no-dots contact-bottom">
+              <li class="contact-bottom-street">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li><a href="mailto:info@example.com">info@example.com</a></li>
+              <li><a href="tel:48111111111">+48 111 111 111</a></li>
             </ul>
-            </div>
+          </address>
+        </div>
+        <div class="join-us">
+          <h4>DOŁĄCZ DO NAS</h4>
+          <ul class="join-us-icons">
+            <li>
+              <svg class="join-us-icon" width="44" height="44">
+                <use
+                  href="./images/icons.svg#icon-instagram"
+                  x="12"
+                  y="12"
+                  width="20"
+                  height="20"
+                  fill="var(--clients-icons)"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="join-us-icon" width="44" height="44">
+                <use
+                  href="./images/icons.svg#icon-twitter"
+                  x="12"
+                  y="12"
+                  width="20"
+                  height="20"
+                  fill="var(--clients-icons)"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="join-us-icon" width="44" height="44">
+                <use
+                  href="./images/icons.svg#icon-facebook"
+                  x="12"
+                  y="12"
+                  width="20"
+                  height="20"
+                  fill="var(--clients-icons)"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="join-us-icon" width="44" height="44">
+                <use
+                  href="./images/icons.svg#icon-linkedin"
+                  x="12"
+                  y="12"
+                  width="20"
+                  height="20"
+                  fill="var(--clients-icons)"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
