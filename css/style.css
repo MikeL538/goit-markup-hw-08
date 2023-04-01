@@ -397,7 +397,9 @@ div.container-footer-address > a {
 }
 
 .contact-top:hover .contact-top-icon use,
-.contact-top:hover {
+.contact-top:hover,
+.contact-top:focus .contact-top-icon use,
+.contact-top:focus {
   color: var(--blue-hover);
   fill: var(--blue-hover);
 }
@@ -442,7 +444,9 @@ ul.lorem-list > li > svg > use:hover {
 }
 
 .our-team-icon:hover,
-.our-team-icon:hover use {
+.our-team-icon:hover use,
+.our-team-icon:focus,
+.our-team-icon:focus use {
   background-color: var(--blue-hover);
   fill: var(--white-text);
 }
@@ -465,15 +469,29 @@ ul.our-clients-logos > li {
   border-radius: 4px;
 }
 
-.our-clients-logos > li:hover {
-  border: 1px solid var(--blue-hover);
-  border-radius: 4px;
-}
-
-.our-clients-logos > li:hover > svg > use {
+.client-logo:hover > use {
   fill: var(--blue-hover);
 }
 
+.our-clients-logos > li:hover {
+  border: 1px solid var(--blue-hover);
+}
+
+.client-logo:focus > use {
+  fill: var(--blue-hover);
+}
+
+.our-clients-logos > li:focus-within {
+  border: 1px solid var(--blue-hover);
+}
+
+.client-logo > use:focus-within {
+  fill: var(--blue-hover);
+}
+
+.our-clients-logos > li:focus-within {
+  border: 1px solid var(--blue-hover);
+}
 /* Portfolio */
 
 ul.projects > li {
@@ -522,6 +540,7 @@ h4 {
   fill: var(--white-text);
 }
 
-.join-us-icon:hover {
+.join-us-icon:hover,
+.join-us-icon:focus {
   background-color: var(--blue-hover);
 }
