@@ -394,6 +394,7 @@ div.container-footer-address > a {
 
 .contact-top-icon {
   margin-right: 10px;
+  fill: var(--contact-gray);
 }
 
 .contact-top:hover .contact-top-icon use,
@@ -423,6 +424,10 @@ ul.lorem-list > li > svg > use:hover {
   stroke-width: 0.5;
 }
 
+.lorem-list-rect {
+  fill: var(--our-team-color);
+}
+
 .our-team-icons {
   display: flex;
   list-style: none;
@@ -441,13 +446,16 @@ ul.lorem-list > li > svg > use:hover {
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
+  fill: var(--clients-icons);
 }
 
-.our-team-icon:hover,
-.our-team-icon:hover use,
-.our-team-icon:focus,
-.our-team-icon:focus use {
+.our-team-icons li a svg:hover,
+.our-team-icons li a:focus svg {
   background-color: var(--blue-hover);
+}
+
+.our-team-icons li a:hover svg use,
+.our-team-icons li a:focus svg use {
   fill: var(--white-text);
 }
 
@@ -464,34 +472,31 @@ ul.lorem-list > li > svg > use:hover {
   cursor: pointer;
 }
 
+.client-logo {
+  fill: var(--clients-icons);
+}
+
 ul.our-clients-logos > li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-logo:hover > use {
+.client-logo:hover use {
   fill: var(--blue-hover);
 }
 
-.our-clients-logos > li:hover {
-  border: 1px solid var(--blue-hover);
+.our-clients-logos li:hover {
+  border-color: var(--blue-hover);
 }
 
-.client-logo:focus > use {
+.our-clients-logos li a:focus svg use {
   fill: var(--blue-hover);
 }
 
-.our-clients-logos > li:focus-within {
-  border: 1px solid var(--blue-hover);
+.our-clients-logos li:focus-within {
+  border-color: var(--blue-hover);
 }
 
-.client-logo > use:focus-within {
-  fill: var(--blue-hover);
-}
-
-.our-clients-logos > li:focus-within {
-  border: 1px solid var(--blue-hover);
-}
 /* Portfolio */
 
 ul.projects > li {
@@ -540,7 +545,10 @@ h4 {
   fill: var(--white-text);
 }
 
-.join-us-icon:hover,
-.join-us-icon:focus {
+.join-us-icon:hover {
+  background-color: var(--blue-hover);
+}
+
+.join-us-icons li a:focus svg {
   background-color: var(--blue-hover);
 }
