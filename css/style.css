@@ -53,6 +53,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu:hover,
@@ -83,6 +84,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-top:hover,
@@ -155,6 +157,7 @@ ul.lorem-list > li > h2 {
   font-size: 14px;
   line-height: 1.14;
   margin: 0;
+  margin-top: 30px;
 }
 
 ul.lorem-list > li > p {
@@ -202,6 +205,11 @@ ul.our-team-list > li > p {
   flex-direction: column;
   height: 600px;
   justify-content: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/h1_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
 }
 
 .btn-studio-div {
@@ -357,6 +365,7 @@ footer {
   line-height: 1.71;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-bottom > li > a:focus,
@@ -388,13 +397,14 @@ div.container-footer-address > a {
   margin-top: 60px;
 }
 
-/*----------Homework #4----------*/
+/*--Homework #4 Decorations and SVG--*/
 
 /*  Headers  */
 
 .contact-top-icon {
   margin-right: 10px;
   fill: var(--contact-gray);
+  transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-top:hover .contact-top-icon use,
@@ -405,23 +415,16 @@ div.container-footer-address > a {
   fill: var(--blue-hover);
 }
 
+.contact-top .contact-top-icon use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Index Main */
-
-.section-main-header {
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/h1_background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 1600px;
-}
-
-ul.lorem-list > li > h2 {
-  margin-top: 30px;
-}
 
 ul.lorem-list > li > svg > use:hover {
   stroke: var(--blue-hover);
   stroke-width: 0.5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lorem-list-rect {
@@ -447,6 +450,7 @@ ul.lorem-list > li > svg > use:hover {
   margin-right: 10px;
   cursor: pointer;
   fill: var(--clients-icons);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-icons li a svg:hover,
@@ -481,6 +485,18 @@ ul.our-clients-logos > li {
   border-radius: 4px;
 }
 
+/*---Transition moved here after accepted work
+
+.client-logo use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients-logos li {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+------*/
+
 .client-logo:hover use {
   fill: var(--blue-hover);
 }
@@ -489,7 +505,7 @@ ul.our-clients-logos > li {
   border-color: var(--blue-hover);
 }
 
-.our-clients-logos li a:focus svg use {
+.our-clients-logos a:focus use {
   fill: var(--blue-hover);
 }
 
@@ -498,10 +514,6 @@ ul.our-clients-logos > li {
 }
 
 /* Portfolio */
-
-ul.projects > li {
-  cursor: pointer;
-}
 
 ul.projects > li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -539,6 +551,7 @@ h4 {
   margin-right: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us-icon use {
@@ -552,3 +565,77 @@ h4 {
 .join-us-icons li a:focus svg {
   background-color: var(--blue-hover);
 }
+
+/*------Homework #5------*/
+
+/* Main */
+
+.client-logo use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients-logos li {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Portfolio */
+
+.projects-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+.projects-info {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(+100%);
+}
+
+.projects-info p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  margin: 0 24px;
+}
+.projects li .projects-info,
+.projects a .projects-info {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects li:hover .projects-info,
+.projects a:focus .projects-info {
+  transform: translateY(0);
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.offer-label-li {
+  position: relative;
+}
+
+.offer-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  color: white;
+}
+
+/*-------TESTY-------*/
