@@ -553,6 +553,40 @@ h4 {
 
 /*------Homework #5------*/
 
+/*Transition do reszty dodana w ich klasach wyżej by ich nie powielać*/
+
+/* Header */
+
+.menu-agency {
+  position: relative;
+}
+
+.menu-agency:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-hover);
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
+.menu-portfolio {
+  position: relative;
+}
+
+.menu-portfolio:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-hover);
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
 /* Main */
 
 .client-logo use {
@@ -561,6 +595,27 @@ h4 {
 
 .our-clients-logos li {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer-label-li {
+  position: relative;
+}
+
+.offer-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  color: white;
 }
 
 /* Portfolio */
@@ -591,6 +646,7 @@ h4 {
   letter-spacing: 0.03em;
   margin: 0 24px;
 }
+
 .projects li .projects-info,
 .projects a .projects-info {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -600,27 +656,6 @@ h4 {
 .projects a:focus .projects-info {
   transform: translateY(0);
   background: rgba(33, 150, 243, 0.9);
-}
-
-.offer-label-li {
-  position: relative;
-}
-
-.offer-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-  bottom: 0;
-  color: white;
 }
 
 /* Service request script */
@@ -650,9 +685,8 @@ h4 {
 }
 
 div.is-hidden .modal {
-  transform: translateY(-100%);
-  rotate: 200deg;
-}
+  transform: translateY(-200%);
+} /* 200% is better visually, however 100% also works */
 
 div.is-hidden:not(.is-hidden) .modal {
   transform: translateY(-50%);
