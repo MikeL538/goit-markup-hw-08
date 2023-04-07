@@ -349,6 +349,8 @@ ul.lorem-list > li > svg > use:hover {
 
 .client-logo {
   fill: var(--clients-icons);
+  width: 170px;
+  height: 92px;
 }
 
 ul.our-clients-logos > li {
@@ -559,6 +561,7 @@ h4 {
 
 .menu-agency {
   position: relative;
+  color: var(--blue-hover);
 }
 
 .menu-agency:after {
@@ -574,6 +577,7 @@ h4 {
 
 .menu-portfolio {
   position: relative;
+  color: var(--blue-hover);
 }
 
 .menu-portfolio:after {
@@ -607,7 +611,7 @@ h4 {
   justify-content: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 
   position: absolute;
@@ -642,9 +646,10 @@ h4 {
 
 .projects-info p {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   margin: 0 24px;
+  color: var(--white-text);
 }
 
 .projects li .projects-info,
