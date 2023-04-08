@@ -643,6 +643,33 @@
             </li>
           </ul>
         </div>
+
+        <div class="newsletter">
+          <h4 class="newsletter-header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+          <div class="newsletter-form">
+            <form>
+              <input
+                class="newsletter-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <a href="#">
+            <button class="newsletter-btn" type="submit">Subskrybuj</button>
+            <svg class="newsletter-icon">
+              <use
+                href="/images/icons.svg#icon-send"
+                width="24"
+                height="24"
+              ></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
 
@@ -650,6 +677,41 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        <h2 class="modal-header">Zostaw wiadomość a my oddzwonimy</h2>
+
+        <form class="modal-form">
+          <label>Imię</label>
+          <input class="modal-name modal-input" type="text" name="name" />
+
+          <label>Telefon</label>
+          <input class="modal-tel modal-input" type="tel" name="tel" />
+
+          <label>E-mail</label>
+          <input class="modal-mail modal-input" type="text" name="mail" />
+
+          <label>Komentarze</label>
+          <textarea
+            id="modal-comments"
+            class="modal-input"
+            type="text"
+            name="comments"
+            placeholder="Wpisz tekst"
+          ></textarea>
+
+          <label id="modal-checkbox">
+            <input type="checkbox" />
+            <span>
+              I agree with the letter and accept the
+              <a href="#">Terms and Conditions</a>
+            </span>
+          </label>
+
+          <div class="modal-btn-container">
+            <a href="#">
+              <button class="modal-btn" type="submit">WYŚLIJ</button>
+            </a>
+          </div>
+        </form>
       </div>
     </div>
 
