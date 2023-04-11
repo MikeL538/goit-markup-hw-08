@@ -559,7 +559,7 @@ h4 {
   background-color: var(--blue-hover);
 }
 
-/*------Homework #5------*/
+/*------Homework #5 and #6------*/
 
 /*Transition do reszty dodana w ich klasach wyżej by ich nie powielać*/
 
@@ -703,16 +703,30 @@ div.is-hidden:not(.is-hidden) .modal {
   transform: translateY(-50%);
 }
 
-.close-btn {
+.modal-close-btn {
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
   background-color: var(--white-text);
-  border: 1px solid #000;
-  border-radius: 50%;
   cursor: pointer;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-close-btn svg {
+  position: relative;
+  top: 6px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.modal a:focus svg,
+.modal a:hover svg {
+  fill: var(--blue-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -720,8 +734,6 @@ div.is-hidden:not(.is-hidden) .modal {
   visibility: hidden;
   pointer-events: none;
 }
-
-/* HW#6 */
 
 /* Footer newsletter */
 
@@ -804,8 +816,16 @@ div.is-hidden:not(.is-hidden) .modal {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--contact-gray);
   margin: 0 0 4px 40px;
+  color: var(--contact-gray);
+}
+
+.modal-form-div {
+  position: relative;
+}
+
+.modal-input::placeholder {
+  color: var(--contact-gray);
 }
 
 .modal-input {
@@ -817,10 +837,61 @@ div.is-hidden:not(.is-hidden) .modal {
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-name {
+.modal-input:focus {
+  border-color: var(--blue-hover);
+}
+
+#modal-name {
   margin-top: 12px;
+}
+
+.modal-icon-person {
+  position: absolute;
+  top: 40px;
+  left: 56px;
+  width: 13px;
+  height: 13px;
+  fill: #212121;
+}
+
+.modal-icon-email {
+  position: absolute;
+  top: 32px;
+  left: 56px;
+  width: 13px;
+  height: 13px;
+  fill: #212121;
+}
+
+.modal-icon-phone {
+  position: absolute;
+  top: 32px;
+  left: 56px;
+  width: 13px;
+  height: 13px;
+  fill: #212121;
+}
+
+.modal-input:focus + .modal-icon-person use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-hover);
+}
+
+.modal-input:focus + .modal-icon-email use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-hover);
+}
+
+.modal-input:focus + .modal-icon-phone use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--blue-hover);
 }
 
 #modal-comments {
@@ -837,31 +908,59 @@ div.is-hidden:not(.is-hidden) .modal {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#modal-checkbox {
-  display: inline;
-  margin-left: 52px;
-  margin-top: 20px;
-  height: 24px;
+#modal-comments:focus {
+  border-color: var(--blue-hover);
 }
 
-#modal-checkbox input {
+.modal-terms {
+  position: relative;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-left: 38px;
 }
 
-#modal-checkbox span {
+.hidden-checkbox {
+  position: absolute;
+  left: 20.3px;
+  bottom: 1.5px;
+  z-index: 10;
+  opacity: 0;
+}
+
+.modal-terms {
+  position: relative;
+}
+
+.modal-icon-checked {
+  position: absolute;
+  left: 58px;
+  bottom: 112px;
+  opacity: 0;
+}
+
+.modal-terms:checked ~ .modal-icon-checked {
+  opacity: 1;
+}
+
+.modal-terms:checked ~ .modal-icon-checkbox {
+  opacity: 0;
+}
+
+.modal-terms-span {
+  position: absolute;
+  margin-top: 26px;
+  margin-left: 8px;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--contact-gray);
 }
 
-#modal-checkbox span a {
+.modal-terms-span a {
   color: var(--blue-hover);
 }
 

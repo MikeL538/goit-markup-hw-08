@@ -651,7 +651,7 @@
               <input
                 class="newsletter-input"
                 type="email"
-                name="email"
+                name="newsletter-email"
                 placeholder="E-mail"
               />
             </form>
@@ -676,20 +676,49 @@
     <!--Modal Window for service request button-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <a href="#">
+          <button type="button" class="modal-close-btn" data-modal-close>
+            <svg width="30" height="30">
+              <use
+                href="./images/icons.svg#icon-x"
+                width="30"
+                height="30"
+              ></use>
+            </svg></button
+        ></a>
         <h2 class="modal-header">Zostaw wiadomość a my oddzwonimy</h2>
 
         <form class="modal-form">
-          <label>Imię</label>
-          <input class="modal-name modal-input" type="text" name="name" />
+          <div class="modal-form-div">
+            <label for="modal-name">Imię</label>
+            <input
+              id="modal-name"
+              class="modal-input"
+              type="text"
+              name="name"
+            />
+            <svg class="modal-icon-person">
+              <use href="./images/icons.svg#icon-person-modal"></use>
+            </svg>
+          </div>
 
-          <label>Telefon</label>
-          <input class="modal-tel modal-input" type="tel" name="tel" />
+          <div class="modal-form-div">
+            <label for="modal-tel">Telefon</label>
+            <input id="modal-tel" class="modal-input" type="tel" name="tel" />
+            <svg class="modal-icon-phone">
+              <use href="./images/icons.svg#icon-phone-modal"></use>
+            </svg>
+          </div>
 
-          <label>E-mail</label>
-          <input class="modal-mail modal-input" type="text" name="mail" />
+          <div class="modal-form-div">
+            <label>Telefon</label>
+            <input class="modal-email modal-input" type="email" name="email" />
+            <svg class="modal-icon-email">
+              <use href="./images/icons.svg#icon-email-modal"></use>
+            </svg>
+          </div>
 
-          <label>Komentarze</label>
+          <label for="modal-comments">Komentarze</label>
           <textarea
             id="modal-comments"
             class="modal-input"
@@ -698,13 +727,23 @@
             placeholder="Wpisz tekst"
           ></textarea>
 
-          <label id="modal-checkbox">
-            <input type="checkbox" />
-            <span>
-              I agree with the letter and accept the
-              <a href="#">Terms and Conditions</a>
-            </span>
-          </label>
+          <label for="modal-terms-checkbox"> </label>
+          <input
+            class="modal-terms hidden-checkbox"
+            type="checkbox"
+            name="terms-checkbox"
+            id="modal-terms-checkbox"
+          />
+          <svg class="modal-icon-checkbox" width="16" height="15">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <svg class="modal-icon-checked" width="16" height="15">
+            <use href="./images/icons.svg#icon-check-tick"></use>
+          </svg>
+          <span class="modal-terms-span">
+            I agree with the letter and accept the
+            <a href="#">Terms and Conditions</a>
+          </span>
 
           <div class="modal-btn-container">
             <a href="#">
