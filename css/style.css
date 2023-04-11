@@ -984,4 +984,16 @@ div.is-hidden:not(.is-hidden) .modal {
   cursor: pointer;
 }
 
+.modal-terms:focus ~ .modal-icon-checkbox use,
+.modal-terms:hover ~ .modal-icon-checkbox use {
+  stroke: var(--blue-hover);
+  stroke-width: 4px;
+}
+
+.modal-terms:focus ~ .modal-icon-checked use,
+.modal-terms:hover ~ .modal-icon-checked use {
+  stroke: var(--body-color);
+  stroke-width: 4px;
+}
+
 /*-------TESTY-------*/
