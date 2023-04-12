@@ -788,6 +788,7 @@ div.is-hidden:not(.is-hidden) .modal {
   margin-left: 12px;
   padding: 10px 77px 10px 43px;
   max-width: 200px;
+  white-space: nowrap;
 }
 
 .newsletter-icon {
