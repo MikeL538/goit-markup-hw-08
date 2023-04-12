@@ -240,6 +240,7 @@ ul.our-team-list > li > p {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  list-style: none;
 }
 
 ul.lorem-list > li {
@@ -252,6 +253,7 @@ ul.lorem-list > li {
   gap: 30px;
   margin-bottom: 0;
   margin-top: 50px;
+  list-style: none;
 }
 
 .our-team-section {
@@ -265,6 +267,7 @@ ul.lorem-list > li {
   justify-content: space-between;
   margin: 0;
   margin-top: 50px;
+  list-style: none;
 }
 
 ul.our-team-ppl > li {
@@ -345,6 +348,7 @@ ul.lorem-list > li > svg > use:hover {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  list-style: none;
 }
 
 .client-logo {
@@ -463,6 +467,7 @@ footer {
   margin: 0;
   text-decoration: none;
   white-space: nowrap;
+  list-style: none;
 }
 
 .contact-bottom-street {
@@ -504,7 +509,7 @@ ul.contact-bottom > li:first-child {
 
 .container-footer {
   display: flex;
-  padding-top: 60px;
+  padding-top: 72px;
   padding-bottom: 0;
 }
 
