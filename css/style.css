@@ -792,11 +792,11 @@ div.is-hidden:not(.is-hidden) .modal {
 }
 
 .newsletter-icon {
-  position: relative;
+  position: absolute;
   height: 24px;
   width: 24px;
-  top: 120px;
-  left: 163px;
+  right: 25px;
+  top: 15px;
 }
 
 /* modal window */
