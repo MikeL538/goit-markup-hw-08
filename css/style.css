@@ -458,9 +458,6 @@ footer {
   line-height: 1.19;
 }
 
-.contact-bottom-container {
-}
-
 .contact-bottom {
   font-style: normal;
   margin: 0;
@@ -495,12 +492,6 @@ ul.contact-bottom a[href^="mailto:"] {
 
 /* #3 Index&Portfolio footer positioning*/
 
-.container-footer-address {
-  display: flex;
-  flex-direction: column;
-  height: 252px;
-}
-
 ul.contact-bottom > li {
   margin-top: 9px;
 }
@@ -509,15 +500,12 @@ ul.contact-bottom > li:first-child {
   margin-top: 20px;
 }
 
-div.container-footer-address > a {
-  margin-top: 60px;
-}
-
 /* #4 Index&Portfolio footer Decorations and SVG */
 
 .container-footer {
   display: flex;
-  align-content: center;
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
 h4 {
@@ -526,7 +514,6 @@ h4 {
 }
 
 .join-us {
-  margin-top: 72px;
   margin-left: 70px;
   display: flex;
   flex-direction: column;
@@ -541,7 +528,6 @@ h4 {
 
 .join-us-icon {
   cursor: pointer;
-  margin-right: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -549,6 +535,12 @@ h4 {
 
 .join-us-icon use {
   fill: var(--white-text);
+}
+
+.join-us-icons li a {
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .join-us-icon:hover {
@@ -740,17 +732,11 @@ div.is-hidden:not(.is-hidden) .modal {
 .newsletter {
   display: flex;
   flex-direction: column;
-  margin-top: 72px;
   margin-left: 78px;
 }
 
 .newsletter-header {
   margin-bottom: 20px;
-}
-
-.newsletter-form {
-  display: flex;
-  align-items: center;
 }
 
 .newsletter-input {
@@ -765,6 +751,11 @@ div.is-hidden:not(.is-hidden) .modal {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.newsletter-input:focus,
+.newsletter-input:hover {
+  border-color: var(--blue-hover);
+}
+
 .newsletter-input::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -773,7 +764,9 @@ div.is-hidden:not(.is-hidden) .modal {
 }
 
 .newsletter-btn {
-  position: absolute;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: var(--blue-hover);
   border-radius: 4px;
   border: none;
@@ -784,19 +777,20 @@ div.is-hidden:not(.is-hidden) .modal {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88;
-  margin-top: 108px;
-  margin-left: 12px;
   padding: 10px 77px 10px 43px;
   max-width: 200px;
+  margin-left: 12px;
+  height: 50px;
   white-space: nowrap;
 }
 
 .newsletter-icon {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 24px;
   height: 24px;
   width: 24px;
-  right: 25px;
-  top: 15px;
 }
 
 /* modal window */
