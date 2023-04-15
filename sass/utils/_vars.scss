@@ -1,0 +1,12 @@
+$colors: (
+  "main": #212121,
+  "interact": #2196f3,
+  "second-info": #757575,
+  "white": #fff,
+  "white-block": #f5f4fa,
+  "clients-logos": #afb1b8,
+);
+
+@function getcolor($key) {
+  @return map-get($colors, $key);
+}

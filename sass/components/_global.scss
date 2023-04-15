@@ -1,0 +1,33 @@
+@import "../utils/vars";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: getcolor("main");
+  font-family: "Roboto", "Raleway", sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.section {
+  margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+img {
+  display: block;
+}

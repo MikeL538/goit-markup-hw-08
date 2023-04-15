@@ -1,0 +1,69 @@
+@import "../utils/vars";
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 1s ease-in-out;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: getcolor("white");
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 500ms ease-in-out;
+}
+
+div.is-hidden {
+  .modal {
+    transform: translateY(-200%);
+  }
+
+  &:not(.is-hidden) {
+    .modal {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.modal__close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: getcolor("white");
+  cursor: pointer;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:focus,
+  &:hover {
+    fill: getcolor("interact");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  svg {
+    position: relative;
+    top: 6px;
+    left: 5px;
+    border-radius: 50%;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
