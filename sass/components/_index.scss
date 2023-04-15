@@ -52,10 +52,10 @@
   justify-content: space-between;
   list-style: none;
 
-  & > li {
+  > li {
     height: 101px;
 
-    & > h2 {
+    > h2 {
       font-size: 14px;
       line-height: 1.14;
       margin: 0;
@@ -63,7 +63,7 @@
       text-transform: uppercase;
     }
 
-    & > p {
+    > p {
       color: getcolor("second-info");
       font-size: 14px;
       line-height: 1.71;
@@ -71,10 +71,10 @@
       margin-top: 10px;
     }
 
-    & > svg > use:hover {
+    > svg > use:hover {
       stroke: getcolor("interact");
       stroke-width: 0.5;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $transition;
     }
   }
 }
@@ -142,7 +142,7 @@
   margin-top: 50px;
   list-style: none;
 
-  & > li {
+  > li {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -153,7 +153,7 @@
     background-color: getcolor("white");
     padding-bottom: 44px;
 
-    & > h3 {
+    > h3 {
       margin: 0;
       margin-top: 30px;
       font-size: 16px;
@@ -161,7 +161,7 @@
       line-height: 1.88;
     }
 
-    & > p {
+    > p {
       margin: 0;
       color: getcolor("second-info");
       font-size: 16px;
@@ -195,7 +195,7 @@
   margin-right: 10px;
   cursor: pointer;
   fill: getcolor("clients-logos");
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 }
 
 .section-clients__header {
@@ -211,10 +211,10 @@
   cursor: pointer;
   list-style: none;
 
-  & > li {
+  > li {
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
 
     &:hover {
       border-color: getcolor("interact");
@@ -235,8 +235,8 @@
   width: 170px;
   height: 92px;
 
-  & > use {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  > use {
+    transition: $transition;
   }
 
   &:hover > use {

@@ -37,7 +37,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 
   &::placeholder {
     color: getcolor("second-info");
@@ -80,17 +80,17 @@
 }
 
 .modal__input:focus + .modal__icon-person use {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
   fill: getcolor("interact");
 }
 
 .modal__input:focus + .modal-icon-email use {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
   fill: getcolor("interact");
 }
 
 .modal__input:focus + .modal__icon-phone use {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
   fill: getcolor("interact");
 }
 
@@ -108,7 +108,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 
   &:focus {
     border-color: getcolor("interact");

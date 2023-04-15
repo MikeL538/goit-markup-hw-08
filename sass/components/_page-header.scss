@@ -23,7 +23,7 @@
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 
   &:hover,
   &:focus {
@@ -33,7 +33,7 @@
 
 .header-menu__logo-web {
   color: getcolor("interact");
-  font-family: "Raleway", sans-serif;
+  font-family: getfont("raleway");
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -41,7 +41,7 @@
 
 .header-menu__logo-studio {
   color: #000000;
-  font-family: "Raleway", sans-serif;
+  font-family: getfont("raleway");
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -58,7 +58,7 @@
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 
   &:hover,
   &:focus {
@@ -126,7 +126,7 @@
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 
   &:hover,
   &:focus {
@@ -145,5 +145,5 @@
 .header-contact__icon {
   margin-right: 10px;
   fill: getcolor("second-info");
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 }

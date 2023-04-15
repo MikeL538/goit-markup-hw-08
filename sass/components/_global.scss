@@ -7,7 +7,7 @@
 
 body {
   color: getcolor("main");
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: getfont("roboto");
   margin: 0 auto;
 }
 
