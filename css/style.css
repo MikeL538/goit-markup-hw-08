@@ -29,12 +29,6 @@ header {
   padding: 0 15px;
 }
 
-.no-dots {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .section {
   margin: 0 auto;
   padding-bottom: 94px;
@@ -45,7 +39,28 @@ img {
   display: block;
 }
 
-/* #2 Index&Porfolio-Header */
+/*--------------------------------------
+----------------------------------------
+-------#2 Index&Porfolio-Header---------
+----------------------------------------
+--------------------------------------*/
+
+.header-container {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.header-menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu li {
+  display: inline-block;
+  margin-right: 46px;
+}
 
 .header-menu__link {
   color: var(--body-color);
@@ -96,6 +111,60 @@ img {
   color: var(--blue-hover);
 }
 
+.nav__link--agency {
+  position: relative;
+  color: var(--blue-hover);
+}
+
+.nav__link--agency:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-hover);
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
+.nav__link--portfolio {
+  position: relative;
+  color: var(--blue-hover);
+}
+
+.nav__link--portfolio:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-hover);
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+
+.header-contact {
+  align-items: center;
+  display: flex;
+}
+
+.header-contact__email {
+  margin: 0 40px 0 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--contact-gray);
+}
+
+.header-contact__tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--contact-gray);
+}
+
 .header-contact__link {
   color: var(--contact-gray);
   font-size: 14px;
@@ -110,41 +179,6 @@ img {
   color: var(--blue-hover);
 }
 
-/* #3 Header Positioning */
-
-.header-container {
-  display: flex;
-  height: 80px;
-  justify-content: space-between;
-}
-
-.header-menu {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-menu li {
-  display: inline-block;
-  margin-right: 46px;
-}
-
-.header-contact {
-  align-items: center;
-  display: flex;
-}
-
-.header-contact__email {
-  margin: 0 40px 0 50px;
-}
-
-/* #4 Headers decoration and SVG  */
-
-.header-contact__icon {
-  margin-right: 10px;
-  fill: var(--contact-gray);
-}
-
 .header-contact__link:hover .header-contact__icon,
 .header-contact__link:hover,
 .header-contact__link:focus .header-contact__icon,
@@ -153,13 +187,33 @@ img {
   fill: var(--blue-hover);
 }
 
-.header-contact__link .header-contact__icon {
+.header-contact__icon {
+  margin-right: 10px;
+  fill: var(--contact-gray);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* #2 Index-Main */
+/*--------------------------------------
+----------------------------------------
+-----------Index Main-------------------
+----------------------------------------
+--------------------------------------*/
 
-.section-main-header__main-header {
+.section-main-header {
+  align-items: center;
+  background-color: #2f303a;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/h1_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+}
+
+.section-main-header__header {
   color: var(--white-text);
   font-size: 44px;
   font-weight: 900;
@@ -169,6 +223,11 @@ img {
   text-align: center;
   text-transform: uppercase;
   width: 696px;
+}
+
+.section-main-header__btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 .section-main-header__btn-buy {
@@ -186,7 +245,19 @@ img {
   padding: 10px 41px 10px 42px;
 }
 
-ul.lorem-list > li > h2 {
+.section-lorem__lorem-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+ul.section-lorem__lorem-list > li {
+  height: 101px;
+  width: 270px;
+}
+
+.section-lorem__lorem-list h2 {
   font-size: 14px;
   line-height: 1.14;
   margin: 0;
@@ -194,12 +265,22 @@ ul.lorem-list > li > h2 {
   text-transform: uppercase;
 }
 
-ul.lorem-list > li > p {
+.section-lorem__lorem-list p {
   color: var(--contact-gray);
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
   margin-top: 10px;
+}
+
+ul.section-lorem__lorem-list > li > svg > use:hover {
+  stroke: var(--blue-hover);
+  stroke-width: 0.5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-lorem__item-rect {
+  fill: var(--our-team-color);
 }
 
 .section-offer__offer-header {
@@ -210,59 +291,6 @@ ul.lorem-list > li > p {
   text-align: center;
 }
 
-.section-our-team__header {
-  font-size: 36px;
-  line-height: 0.86;
-  margin: 0;
-  padding-top: 94px;
-  text-align: center;
-}
-
-ul.our-team-list > li > h3 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.88;
-}
-
-ul.our-team-list > li > p {
-  color: var(--contact-gray);
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-/* #3 Index-Main positioning*/
-
-.section-main-header {
-  align-items: center;
-  background-color: #2f303a;
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-  justify-content: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/h1_background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 1600px;
-}
-
-.section-main-header__btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-.lorem-list {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  list-style: none;
-}
-
-ul.lorem-list > li {
-  height: 101px;
-  width: 270px;
-}
-
 .section-offer__offer-pictures {
   display: flex;
   gap: 30px;
@@ -271,10 +299,40 @@ ul.lorem-list > li {
   list-style: none;
 }
 
+.section-offer__offer-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  color: white;
+}
+
+.section-offer__offer-item {
+  position: relative;
+}
+
 .section-our-team {
   background-color: var(--our-team-color);
   height: 692px;
   padding-top: 0;
+}
+
+.section-our-team__header {
+  font-size: 36px;
+  line-height: 0.86;
+  margin: 0;
+  padding-top: 94px;
+  text-align: center;
 }
 
 .section-our-team__employees {
@@ -300,24 +358,16 @@ ul.lorem-list > li {
 ul.section-our-team__employees > li > h3 {
   margin: 0;
   margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
 }
 
 ul.section-our-team__employees > li > p {
   margin: 0;
-  margin-bottom: 16px;
-  margin-top: 10px;
-}
-
-/* #4 Index-main Decorations and SVG */
-
-ul.lorem-list > li > svg > use:hover {
-  stroke: var(--blue-hover);
-  stroke-width: 0.5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.lorem-list__rect {
-  fill: var(--our-team-color);
+  color: var(--contact-gray);
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .section-our-team__icons {
@@ -333,15 +383,6 @@ ul.lorem-list > li > svg > use:hover {
   margin-right: 32px;
 }
 
-.section-our-team__icon {
-  display: block;
-  border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
-  fill: var(--clients-icons);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .section-our-team__icons li a svg:hover,
 .section-our-team__icons li a:focus svg {
   background-color: var(--blue-hover);
@@ -350,6 +391,15 @@ ul.lorem-list > li > svg > use:hover {
 .section-our-team__icons li a:hover svg use,
 .section-our-team__icons li a:focus svg use {
   fill: var(--white-text);
+}
+
+.section-our-team__icon {
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  fill: var(--clients-icons);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients__header {
@@ -366,19 +416,10 @@ ul.lorem-list > li > svg > use:hover {
   list-style: none;
 }
 
-.section-clients__logo {
-  fill: var(--clients-icons);
-  width: 170px;
-  height: 92px;
-}
-
 .section-clients__logos li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.section-clients__logo:hover use {
-  fill: var(--blue-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients__logos li:hover {
@@ -393,9 +434,35 @@ ul.lorem-list > li > svg > use:hover {
   border-color: var(--blue-hover);
 }
 
-/* #2 Portfolio-Main styling*/
+.section-clients__logo {
+  fill: var(--clients-icons);
+  width: 170px;
+  height: 92px;
+}
 
-.btn-portfolio {
+.section-clients__logo use {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-clients__logo:hover use {
+  fill: var(--blue-hover);
+}
+
+/*--------------------------------------
+----------------------------------------
+-----------Portfolio Main---------------
+----------------------------------------
+--------------------------------------*/
+
+.filters__btns-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.filters__btn {
   background-color: var(--our-team-color);
   border-radius: 4px;
   border: none;
@@ -406,39 +473,75 @@ ul.lorem-list > li > svg > use:hover {
   cursor: pointer;
 }
 
-.btn-portfolio:focus,
-.btn-portfolio:hover {
+.filters__btn:focus,
+.filters__btn:hover {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: white;
 }
 
-/* #3 Porftolio-Main positioning */
-
-.filter-btns {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.projects {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
   margin: 0;
+  list-style: none;
 }
 
-.projects-border {
+ul.projects__list > li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects__list a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+.projects__list li .projects__description,
+.projects__list a .projects__description {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__list li:hover .projects__description,
+.projects__list a:focus .projects__description {
+  transform: translateY(0);
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.projects__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__description {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(+100%);
+}
+
+.projects__description p {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  margin: 0 24px;
+  color: var(--white-text);
+}
+
+.projects__border {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 24px 20px;
 }
 
-div.projects-border > h3 {
+.projects__border h3 {
   font-size: 18px;
   letter-spacing: 0.06em;
   line-height: 2;
@@ -446,43 +549,33 @@ div.projects-border > h3 {
   margin-bottom: 4px;
 }
 
-div.projects-border > p {
-  color: #757575;
-  color: #757575;
+.projects__border p {
+  color: var(--contact-gray);
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.88;
   margin: 0px;
 }
 
-/* #4 Portfolio Decorations and SVG */
-
-ul.projects > li:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/* #2 Index&Portfolio-footer styling */
+/*--------------------------------------
+----------------------------------------
+--------Index&Portfolio Footer----------
+----------------------------------------
+--------------------------------------*/
 
 footer {
   background-color: #2f303a;
   height: 252px;
 }
 
-.container-footer__logo-studio {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
+.container-footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
-.address__link {
-  font-style: normal;
-  margin: 0;
+.container-footer__link {
   text-decoration: none;
-  white-space: nowrap;
-  list-style: none;
 }
 
 .container-footer__logo-web {
@@ -491,6 +584,16 @@ footer {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  text-decoration: none;
+}
+
+.container-footer__logo-studio {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .address__list {
@@ -520,6 +623,9 @@ footer {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
+  white-space: nowrap;
+  list-style: none;
 }
 
 .address__link:focus,
@@ -529,14 +635,6 @@ footer {
 
 .address__link[href^="mailto:"] {
   text-decoration: underline;
-}
-
-/* #4 Index&Portfolio footer Decorations and SVG */
-
-.container-footer {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 0;
 }
 
 .join-us {
@@ -559,6 +657,16 @@ footer {
   margin-top: 20px;
 }
 
+.join-us__icons li a {
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.join-us__icons li a:focus svg {
+  background-color: var(--blue-hover);
+}
+
 .join-us__icon {
   cursor: pointer;
   border-radius: 50%;
@@ -570,23 +678,17 @@ footer {
   fill: var(--white-text);
 }
 
-.join-us__icons li a {
-  display: block;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
 .join-us__icon:hover {
   background-color: var(--blue-hover);
 }
 
-.join-us__icons li a:focus svg {
-  background-color: var(--blue-hover);
-}
+/*--------------------------------------
+----------------------------------------
+-----------Footer Newsletter------------
+----------------------------------------
+--------------------------------------*/
 
-/* #6 Footer newsletter 
-
-/* Footer newsletter */
+/* TUUUUU */
 
 .newsletter {
   display: flex;
@@ -652,117 +754,6 @@ footer {
   margin-left: 24px;
   height: 24px;
   width: 24px;
-}
-
-/*------Homework #5 and #6------*/
-
-/*Transition do reszty dodana w ich klasach wyżej by ich nie powielać*/
-
-/* Header */
-
-.nav__link--agency {
-  position: relative;
-  color: var(--blue-hover);
-}
-
-.nav__link--agency:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-hover);
-  position: absolute;
-  top: 44px;
-  left: 0;
-}
-
-.nav__link--portfolio {
-  position: relative;
-  color: var(--blue-hover);
-}
-
-.nav__link--portfolio:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-hover);
-  position: absolute;
-  top: 44px;
-  left: 0;
-}
-
-/* Main */
-
-.section-clients__logo use {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-clients__logos li {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-offer__offer-item {
-  position: relative;
-}
-
-.section-offer__offer-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-
-  text-transform: uppercase;
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-  bottom: 0;
-  color: white;
-}
-
-/* Portfolio */
-
-.projects-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.projects a {
-  text-decoration: none;
-  color: var(--body-color);
-}
-
-.projects-info {
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateY(+100%);
-}
-
-.projects-info p {
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  margin: 0 24px;
-  color: var(--white-text);
-}
-
-.projects li .projects-info,
-.projects a .projects-info {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.projects li:hover .projects-info,
-.projects a:focus .projects-info {
-  transform: translateY(0);
-  background: rgba(33, 150, 243, 0.9);
 }
 
 /* Service request script */
@@ -831,7 +822,11 @@ div.is-hidden:not(.is-hidden) .modal {
   pointer-events: none;
 }
 
-/* modal window */
+/*--------------------------------------
+-------------Service Request------------
+--------------Modal Window--------------
+----------------------------------------
+--------------------------------------*/
 
 .modal__header {
   font-weight: 700;
@@ -857,10 +852,6 @@ div.is-hidden:not(.is-hidden) .modal {
   position: relative;
 }
 
-.modal__input::placeholder {
-  color: var(--contact-gray);
-}
-
 .modal__input {
   display: block;
   width: 448px;
@@ -875,6 +866,10 @@ div.is-hidden:not(.is-hidden) .modal {
   line-height: 1.17;
   letter-spacing: 0.01em;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__input::placeholder {
+  color: var(--contact-gray);
 }
 
 .modal__input:focus {
@@ -948,14 +943,6 @@ div.is-hidden:not(.is-hidden) .modal {
   border-color: var(--blue-hover);
 }
 
-.modal__terms {
-  position: relative;
-  width: 16px;
-  height: 15px;
-  margin-top: 20px;
-  margin-left: 38px;
-}
-
 .hidden-checkbox {
   position: absolute;
   left: 20.3px;
@@ -966,6 +953,10 @@ div.is-hidden:not(.is-hidden) .modal {
 
 .modal__terms {
   position: relative;
+  width: 16px;
+  height: 15px;
+  margin-top: 20px;
+  margin-left: 38px;
 }
 
 .modal__icon-checked {
@@ -981,6 +972,18 @@ div.is-hidden:not(.is-hidden) .modal {
 
 .modal__terms:checked ~ .modal__icon-checkbox {
   opacity: 0;
+}
+
+.modal__terms:focus ~ .modal__icon-checkbox use,
+.modal__terms:hover ~ .modal__icon-checkbox use {
+  stroke: var(--blue-hover);
+  stroke-width: 4px;
+}
+
+.modal__terms:focus ~ .modal__icon-checked use,
+.modal__terms:hover ~ .modal__icon-checked use {
+  stroke: var(--body-color);
+  stroke-width: 4px;
 }
 
 .modal__terms-span {
@@ -1015,18 +1018,6 @@ div.is-hidden:not(.is-hidden) .modal {
   height: 50px;
   text-align: center;
   cursor: pointer;
-}
-
-.modal__terms:focus ~ .modal__icon-checkbox use,
-.modal__terms:hover ~ .modal__icon-checkbox use {
-  stroke: var(--blue-hover);
-  stroke-width: 4px;
-}
-
-.modal__terms:focus ~ .modal__icon-checked use,
-.modal__terms:hover ~ .modal__icon-checked use {
-  stroke: var(--body-color);
-  stroke-width: 4px;
 }
 
 /*-------TESTY-------*/
