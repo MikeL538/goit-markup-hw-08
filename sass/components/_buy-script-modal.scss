@@ -24,6 +24,20 @@
   position: relative;
 }
 
+.modal__icon {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  fill: #212121;
+  top: 32px;
+  left: 55px;
+}
+
+.modal__icon-person--position {
+  top: 40px;
+  left: 55px;
+}
+
 .modal__input {
   display: block;
   width: 448px;
@@ -45,53 +59,15 @@
 
   &:focus {
     border-color: getcolor("interact");
+    + .modal__icon--focused {
+      transition: $transition;
+      fill: getcolor("interact");
+    }
   }
 }
 
 #modal-name {
   margin-top: 12px;
-}
-
-.modal__icon-person {
-  position: absolute;
-  top: 40px;
-  left: 56px;
-  width: 13px;
-  height: 13px;
-  fill: #212121;
-}
-
-.modal__icon-phone {
-  position: absolute;
-  top: 32px;
-  left: 56px;
-  width: 13px;
-  height: 13px;
-  fill: #212121;
-}
-
-.modal__icon-email {
-  position: absolute;
-  top: 32px;
-  left: 56px;
-  width: 13px;
-  height: 13px;
-  fill: #212121;
-}
-
-.modal__input:focus + .modal__icon-person use {
-  transition: $transition;
-  fill: getcolor("interact");
-}
-
-.modal__input:focus + .modal-icon-email use {
-  transition: $transition;
-  fill: getcolor("interact");
-}
-
-.modal__input:focus + .modal__icon-phone use {
-  transition: $transition;
-  fill: getcolor("interact");
 }
 
 #modal-comments {
@@ -129,6 +105,40 @@
   height: 15px;
   margin-top: 20px;
   margin-left: 38px;
+
+  &:checked ~ .modal__icon-checked {
+    opacity: 1;
+  }
+
+  &:checked ~ .modal__icon-checkbox {
+    opacity: 0;
+  }
+
+  &:focus ~ .modal__icon-checkbox use,
+  &:hover ~ .model__icon-checkbox use {
+    stroke: getcolor("interact");
+    stroke-width: 4px;
+  }
+
+  &:focus ~ .modal__icon-checked use,
+  &:hover ~ .modal__icon-checked use {
+    stroke: getcolor("main");
+    stroke-width: 4px;
+  }
+
+  &-span {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: getcolor("second-info");
+
+    a {
+      color: getcolor("interact");
+    }
+  }
 }
 
 .modal__icon-checked {
@@ -136,40 +146,6 @@
   left: 57px;
   bottom: 113px;
   opacity: 0;
-}
-
-.modal__terms:checked ~ .modal__icon-checked {
-  opacity: 1;
-}
-
-.modal__terms:checked ~ .modal__icon-checkbox {
-  opacity: 0;
-}
-
-.modal__terms:focus ~ .modal__icon-checkbox use,
-.modal__terms:hover ~ .modal__icon-checkbox use {
-  stroke: getcolor("interact");
-  stroke-width: 4px;
-}
-
-.modal__terms:focus ~ .modal__icon-checked use,
-.modal__terms:hover ~ .modal__icon-checked use {
-  stroke: getcolor("main");
-  stroke-width: 4px;
-}
-
-.modal__terms-span {
-  position: absolute;
-  margin-top: 26px;
-  margin-left: 8px;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: getcolor("second-info");
-}
-
-.modal__terms-span a {
-  color: getcolor("interact");
 }
 
 .modal__btn-container {

@@ -9,28 +9,28 @@ footer {
   display: flex;
   padding-top: 60px;
   padding-bottom: 0;
-}
 
-.container-footer__link {
-  text-decoration: none;
-}
+  &__link {
+    text-decoration: none;
+  }
 
-.container-footer__logo-web {
-  color: getcolor("interact");
-  font-family: getfont("raleway");
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  text-decoration: none;
-}
+  &__logo-web {
+    color: getcolor("interact");
+    font-family: getfont("raleway");
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+  }
 
-.container-footer__logo-studio {
-  color: getcolor("white");
-  font-family: getfont("raleway");
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  text-decoration: none;
+  &__logo-studio {
+    color: getcolor("white");
+    font-family: getfont("raleway");
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+  }
 }
 
 .address__list {
@@ -85,33 +85,33 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
   }
-}
 
-.join-us__icons {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin-top: 20px;
+  &__icons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
 
-  > li > a {
-    display: block;
-    border-radius: 50%;
-    margin-right: 10px;
+    > li > a {
+      display: block;
+      border-radius: 50%;
+      margin-right: 10px;
 
-    &:focus svg {
-      background-color: getcolor("interact");
+      &:focus svg {
+        background-color: getcolor("interact");
+      }
     }
   }
-}
 
-.join-us__icon {
-  cursor: pointer;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: $transition;
-  fill: getcolor("white");
+  &__icon {
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: $transition;
+    fill: getcolor("white");
 
-  &:hover {
-    background-color: getcolor("interact");
+    &:hover {
+      background-color: getcolor("interact");
+    }
   }
 }

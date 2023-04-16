@@ -10,42 +10,42 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-}
 
-.header-menu li {
-  display: inline-block;
-  margin-right: 46px;
-}
+  &__link {
+    color: getcolor("main");
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    transition: $transition;
 
-.header-menu__link {
-  color: getcolor("main");
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  text-decoration: none;
-  transition: $transition;
-
-  &:hover,
-  &:focus {
-    color: getcolor("interact");
+    &:hover,
+    &:focus {
+      color: getcolor("interact");
+    }
   }
-}
 
-.header-menu__logo-web {
-  color: getcolor("interact");
-  font-family: getfont("raleway");
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-}
+  li {
+    display: inline-block;
+    margin-right: 46px;
+  }
 
-.header-menu__logo-studio {
-  color: #000000;
-  font-family: getfont("raleway");
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  margin-right: 93px;
+  .header-menu__logo-web {
+    color: getcolor("interact");
+    font-family: getfont("raleway");
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
+
+  .header-menu__logo-studio {
+    color: #000000;
+    font-family: getfont("raleway");
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
 .nav__list {
@@ -66,23 +66,7 @@
   }
 }
 
-.nav__link--agency {
-  position: relative;
-  color: getcolor("interact");
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: getcolor("interact");
-    position: absolute;
-    top: 44px;
-    left: 0;
-  }
-}
-
-.nav__link--portfolio {
+.nav__link--active {
   position: relative;
   color: getcolor("interact");
 
@@ -131,15 +115,13 @@
   &:hover,
   &:focus {
     color: getcolor("interact");
-  }
-}
 
-.header-contact__link:hover .header-contact__icon,
-.header-contact__link:hover,
-.header-contact__link:focus .header-contact__icon,
-.header-contact__link:focus {
-  color: getcolor("interact");
-  fill: getcolor("interact");
+    .header-contact__icon,
+    & {
+      color: getcolor("interact");
+      fill: getcolor("interact");
+    }
+  }
 }
 
 .header-contact__icon {

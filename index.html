@@ -36,7 +36,7 @@
             <nav>
               <ul class="nav__list">
                 <li>
-                  <a href="index.html" class="nav__link nav__link--agency"
+                  <a href="index.html" class="nav__link nav__link--active"
                     >Agencja</a
                   >
                 </li>
@@ -708,7 +708,9 @@
               type="text"
               name="name"
             />
-            <svg class="modal__icon-person">
+            <svg
+              class="modal__icon modal__icon-person--position modal__icon--focused modal__icon--position"
+            >
               <use href="./images/icons.svg#icon-person-modal"></use>
             </svg>
           </div>
@@ -716,7 +718,7 @@
           <div class="modal__form-div">
             <label for="modal-tel">Telefon</label>
             <input id="modal-tel" class="modal__input" type="tel" name="tel" />
-            <svg class="modal__icon-phone">
+            <svg class="modal__icon modal__icon--focused modal__icon--position">
               <use href="./images/icons.svg#icon-phone-modal"></use>
             </svg>
           </div>
@@ -724,7 +726,7 @@
           <div class="modal__form-div">
             <label>Telefon</label>
             <input class="modal-email modal__input" type="email" name="email" />
-            <svg class="modal__icon-email">
+            <svg class="modal__icon modal__icon--focused modal__icon--position">
               <use href="./images/icons.svg#icon-email-modal"></use>
             </svg>
           </div>
