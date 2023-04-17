@@ -54,6 +54,10 @@
     margin-left: 12px;
     height: 50px;
     white-space: nowrap;
+
+    &:focus {
+      outline: $outline-focus;
+    }
   }
 
   &__icon {

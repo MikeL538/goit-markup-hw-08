@@ -137,6 +137,10 @@
 
     a {
       color: getcolor("interact");
+
+      &:focus {
+        outline: $outline-focus;
+      }
     }
   }
 }
@@ -166,4 +170,8 @@
   height: 50px;
   text-align: center;
   cursor: pointer;
+
+  &:focus {
+    outline: $outline-focus;
+  }
 }

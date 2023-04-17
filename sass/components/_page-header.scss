@@ -17,11 +17,11 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+    width: 137px;
     transition: $transition;
 
-    &:hover,
     &:focus {
-      color: getcolor("interact");
+      outline: $outline-focus;
     }
   }
 
@@ -50,6 +50,7 @@
 
 .nav__list {
   list-style: none;
+  margin-left: 93px;
 }
 
 .nav__link {
