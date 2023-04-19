@@ -53,7 +53,7 @@
     }
 
     &:hover .projects__description,
-    > a:focus .projects__description {
+    > figure > a:focus .projects__description {
       transform: translateY(0);
     }
   }
