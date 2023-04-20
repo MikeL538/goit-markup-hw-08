@@ -3,7 +3,6 @@
 .newsletter {
   display: flex;
   flex-direction: column;
-  margin-left: 78px;
   position: relative;
   padding-top: 12px;
 
@@ -14,7 +13,7 @@
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,7 +37,7 @@
   }
 
   &__btn {
-    position: absolute;
+    position: relative;
     background-color: getcolor("interact");
     border-radius: 4px;
     border: none;
@@ -52,6 +51,7 @@
     padding: 10px 77px 10px 43px;
     max-width: 200px;
     margin-left: 12px;
+    margin-top: 20px;
     height: 50px;
     white-space: nowrap;
 

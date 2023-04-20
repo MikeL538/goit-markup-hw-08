@@ -1,0 +1,13 @@
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-left: 78px;
+
+    &__btn {
+      margin-top: 0;
+    }
+
+    &__input {
+      width: 358px;
+    }
+  }
+}

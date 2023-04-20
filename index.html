@@ -93,20 +93,12 @@
           <!--Lorem Ipsum, probably some description -->
           <ul class="section-lorem__lorem-list">
             <li>
-              <svg width="270" height="120">
-                <rect
-                  class="section-lorem__item-rect"
-                  x="0"
-                  y="0"
-                  width="270"
-                  height="120"
-                ></rect>
+              <svg>
+                <rect class="section-lorem__item-rect"></rect>
                 <use
                   href="./images/icons.svg#icon-antenna"
                   width="70"
                   height="70"
-                  x="102.34"
-                  y="25"
                 ></use>
               </svg>
               <h2>Lorem ipsum</h2>
@@ -116,20 +108,12 @@
               </p>
             </li>
             <li>
-              <svg width="270" height="120">
-                <rect
-                  class="section-lorem__item-rect"
-                  x="0"
-                  y="0"
-                  width="270"
-                  height="120"
-                ></rect>
+              <svg>
+                <rect class="section-lorem__item-rect"></rect>
                 <use
                   href="./images/icons.svg#icon-clock"
                   width="70"
                   height="70"
-                  x="102.34"
-                  y="25"
                 ></use>
               </svg>
               <h2>Lorem ipsum</h2>
@@ -139,20 +123,12 @@
               </p>
             </li>
             <li>
-              <svg width="270" height="120">
-                <rect
-                  class="section-lorem__item-rect"
-                  x="0"
-                  y="0"
-                  width="300"
-                  height="150"
-                ></rect>
+              <svg>
+                <rect class="section-lorem__item-rect"></rect>
                 <use
                   href="./images/icons.svg#icon-diagram"
                   width="70"
                   height="70"
-                  x="102.34"
-                  y="25"
                 ></use>
               </svg>
               <h2>Lorem ipsum</h2>
@@ -162,20 +138,12 @@
               </p>
             </li>
             <li>
-              <svg width="270" height="120">
-                <rect
-                  class="section-lorem__item-rect"
-                  x="0"
-                  y="0"
-                  width="300"
-                  height="150"
-                ></rect>
+              <svg>
+                <rect class="section-lorem__item-rect"></rect>
                 <use
                   href="./images/icons.svg#icon-astronaut"
                   width="70"
                   height="70"
-                  x="102.34"
-                  y="25"
                 ></use>
               </svg>
               <h2>Lorem ipsum</h2>
@@ -233,8 +201,6 @@
               <img
                 src="images/product_designer.jpg"
                 alt="Picture of one of our employees - John Doe."
-                width="270"
-                height="260"
               />
               <h3>John Doe</h3>
               <p>Product Designer</p>
@@ -297,8 +263,6 @@
               <img
                 src="images/frontend_developer.jpg"
                 alt="Picture of one of our employees - John Doe."
-                width="270"
-                height="260"
               />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
@@ -361,8 +325,6 @@
               <img
                 src="images/marketing.jpg"
                 alt="Picture of one of our employees - John Doe."
-                width="270"
-                height="260"
               />
               <h3>John Doe</h3>
               <p>Marketing</p>
@@ -425,8 +387,6 @@
               <img
                 src="images/ui_designer.jpg"
                 alt="Picture of one of our employees - John Doe."
-                width="270"
-                height="260"
               />
               <h3>John Doe</h3>
               <p>UI Designer</p>
@@ -578,87 +538,92 @@
 
     <footer>
       <div class="container container-footer">
-        <!--Page bottom, address-->
-        <div>
-          <a class="container-footer__link" href="index.html">
-            <span class="container-footer__logo-web">Web</span>
-            <span class="container-footer__logo-studio">Studio</span>
-          </a>
-          <address>
-            <ul class="address__list">
-              <li class="address__item-street">
-                m. Warszawa, Aleje Jerozolimskie 21
+        <section class="section section-contact-footer">
+          <!--Page bottom, address-->
+          <div>
+            <a class="container-footer__link" href="index.html">
+              <span class="container-footer__logo-web">Web</span>
+              <span class="container-footer__logo-studio">Studio</span>
+            </a>
+            <address>
+              <ul class="address__list">
+                <li class="address__item-street">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li>
+                  <a class="address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address__link" href="tel:48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </section>
+
+        <section class="section section-contact-footer">
+          <h4 class="join-us__header">dołącz do nas</h4>
+          <div class="join-us">
+            <ul class="join-us__icons">
+              <li>
+                <a href="#">
+                  <svg class="join-us__icon" width="44" height="44">
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                      x="12"
+                      y="12"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="address__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a href="#">
+                  <svg class="join-us__icon" width="44" height="44">
+                    <use
+                      href="./images/icons.svg#icon-twitter"
+                      x="12"
+                      y="12"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="address__link" href="tel:48111111111"
-                  >+48 111 111 111</a
-                >
+                <a href="#">
+                  <svg class="join-us__icon" width="44" height="44">
+                    <use
+                      href="./images/icons.svg#icon-facebook"
+                      x="12"
+                      y="12"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="join-us__icon" width="44" height="44">
+                    <use
+                      href="./images/icons.svg#icon-linkedin"
+                      x="12"
+                      y="12"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-us">
-          <h4>dołącz do nas</h4>
-          <ul class="join-us__icons">
-            <li>
-              <a href="#">
-                <svg class="join-us__icon" width="44" height="44">
-                  <use
-                    href="./images/icons.svg#icon-instagram"
-                    x="12"
-                    y="12"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="join-us__icon" width="44" height="44">
-                  <use
-                    href="./images/icons.svg#icon-twitter"
-                    x="12"
-                    y="12"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="join-us__icon" width="44" height="44">
-                  <use
-                    href="./images/icons.svg#icon-facebook"
-                    x="12"
-                    y="12"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="join-us__icon" width="44" height="44">
-                  <use
-                    href="./images/icons.svg#icon-linkedin"
-                    x="12"
-                    y="12"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
+        </section>
 
         <div class="newsletter">
           <h4 class="newsletter__header">zapisz się do newslettera</h4>

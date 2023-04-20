@@ -12,7 +12,6 @@
 body {
   color: getcolor("main");
   font-family: getfont("roboto");
-  margin: 0 auto;
 }
 
 header {
@@ -22,16 +21,39 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
 }
 
 .section {
   margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 img {
   display: block;
+}
+
+/*--------1200px---------*/
+/*--------1200px---------*/
+/*--------1200px---------*/
+/*--------1200px---------*/
+/*--------1200px---------*/
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section {
+    margin: 0 auto;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
 }

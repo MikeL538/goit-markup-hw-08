@@ -1,0 +1,87 @@
+@media screen and (min-width: 1200px) {
+  .section-main-header {
+    height: 600px;
+    background: {
+      size: 1600px auto;
+    }
+
+    &__header {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
+  }
+
+  .section-lorem__lorem-list {
+    gap: 30px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+
+    > li {
+      > h2 {
+        text-align: start;
+      }
+
+      > p {
+        margin-bottom: 0;
+      }
+
+      > svg {
+        width: 270px;
+        height: 120px;
+
+        > use {
+          transform: translateX(102.34px) translateY(25px);
+        }
+      }
+    }
+  }
+
+  .section-lorem__item-rect {
+    width: 270px;
+    height: 120px;
+  }
+
+  .section-offer {
+    display: block;
+    padding-top: 0;
+  }
+
+  .section-our-team__employees {
+    display: flex;
+    justify-content: space-between;
+
+    > li {
+      padding-bottom: 44px;
+      margin-bottom: 0;
+      width: 270px;
+      height: 428px;
+      gap: 30px;
+
+      > img {
+        width: 270px;
+        height: 260px;
+      }
+    }
+  }
+
+  .section-our-team__icons {
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+
+    & > li:first-child {
+      margin-left: 32px;
+    }
+  }
+
+  .section-clients__logos {
+    margin-bottom: 0;
+  }
+
+  .section-clients__logo {
+    width: 170px;
+    height: 92px;
+  }
+}

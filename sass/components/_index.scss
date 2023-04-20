@@ -1,72 +1,71 @@
 @import "../utils/vars";
 
 .section-main-header {
+  display: flex;
   align-items: center;
   background-color: #2f303a;
-  display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 400px;
   justify-content: center;
   background: {
     image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/h1_background.jpg");
     repeat: no-repeat;
     position: center;
-    size: 1600px auto;
+    size: 480px 400px;
   }
 
   &__header {
+    text-align: center;
     color: getcolor("white");
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.06em;
-    line-height: 1.36;
+    line-height: 1.62;
     margin: 0;
-    text-align: center;
     text-transform: uppercase;
-    width: 696px;
+    width: 385px;
   }
 
   &__btn-container {
     display: flex;
     justify-content: center;
+  }
 
-    .section-main-header__btn-buy {
-      background-color: getcolor("interact");
-      border-radius: 4px;
-      border: none;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      color: getcolor("white");
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      line-height: 1.88;
-      margin-top: 30px;
-      padding: 10px 41px 10px 42px;
+  .section-main-header__btn-buy {
+    background-color: getcolor("interact");
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: getcolor("white");
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    margin-top: 30px;
+    padding: 10px 41px 10px 42px;
 
-      &:focus {
-        outline: $outline-focus;
-      }
+    &:focus {
+      outline: $outline-focus;
     }
   }
 }
 
 .section-lorem__lorem-list {
+  list-style-type: none;
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  list-style: none;
-
+  flex-wrap: wrap;
+  justify-content: center;
   > li {
-    height: 101px;
-
     > h2 {
       font-size: 14px;
       line-height: 1.14;
       margin: 0;
       margin-top: 30px;
+      margin-bottom: 10px;
       text-transform: uppercase;
+      text-align: center;
     }
 
     > p {
@@ -74,9 +73,18 @@
       font-size: 14px;
       line-height: 1.71;
       margin: 0;
-      margin-top: 10px;
+      margin-bottom: 30px;
+      letter-spacing: 0.03em;
     }
 
+    > svg {
+      width: 450px;
+      height: 120px;
+
+      > use {
+        transform: translateX(190px) translateY(25px);
+      }
+    }
     > svg > use:hover {
       stroke: getcolor("interact");
       stroke-width: 0.5;
@@ -87,13 +95,18 @@
 
 .section-lorem__item-rect {
   fill: getcolor("white-block");
+  width: 450px;
+  height: 120px;
+}
+
+.section-offer {
+  display: none;
 }
 
 .section-offer__offer-header {
   font-size: 36px;
   line-height: 0.86;
   margin: 0;
-  margin-top: 70px;
   text-align: center;
 }
 
@@ -129,7 +142,6 @@
 
 .section-our-team {
   background-color: getcolor("white-block");
-  height: 692px;
   padding-top: 0;
 }
 
@@ -142,8 +154,6 @@
 }
 
 .section-our-team__employees {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   margin-top: 50px;
   list-style: none;
@@ -152,12 +162,16 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    gap: 30px;
-    height: 428px;
+    height: 622px;
     text-align: center;
-    width: 270px;
+    width: 450px;
     background-color: getcolor("white");
-    padding-bottom: 44px;
+    margin-bottom: 30px;
+
+    > img {
+      width: 450px;
+      height: 460px;
+    }
 
     > h3 {
       margin: 0;
@@ -179,9 +193,10 @@
 .section-our-team__icons {
   display: flex;
   list-style: none;
+  margin-top: 13px;
 
   & > li:first-child {
-    margin-left: 32px;
+    margin-left: 122px;
   }
 
   & li > a > svg:hover,
@@ -213,14 +228,18 @@
 
 .section-clients__logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  cursor: pointer;
   list-style: none;
 
   > li {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: $transition;
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
 
     &:hover {
       border-color: getcolor("interact");
@@ -238,7 +257,7 @@
 
 .section-clients__logo {
   fill: getcolor("clients-logos");
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   > use {

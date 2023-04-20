@@ -2,13 +2,13 @@
 
 footer {
   background-color: #2f303a;
-  height: 252px;
+  height: 603px;
 }
 
 .container-footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 0;
+  text-align: center;
 
   &__link {
     text-decoration: none;
@@ -40,6 +40,10 @@ footer {
     line-height: 1.19;
     text-decoration: none;
   }
+}
+
+.section-contact-footer {
+  padding-top: 0;
 }
 
 .address__list {
@@ -83,17 +87,15 @@ footer {
   }
 }
 
-.join-us {
-  margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
+.join-us__header {
+  color: getcolor("white");
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
-  > h4 {
-    color: getcolor("white");
-    font-size: 14px;
-    text-transform: uppercase;
-  }
+.join-us {
+  display: flex;
+  justify-content: center;
 
   &__icons {
     display: flex;
