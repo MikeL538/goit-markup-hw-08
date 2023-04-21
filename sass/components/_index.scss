@@ -24,7 +24,7 @@
     line-height: 1.62;
     margin: 0;
     text-transform: uppercase;
-    width: 385px;
+    width: 100%;
   }
 
   &__btn-container {
@@ -141,9 +141,10 @@
 }
 
 .section-our-team {
-  background-color: getcolor("main");
+  background-color: getcolor("white-block");
   padding-top: 0;
-  width: 100%;
+  width: 480px;
+  display: flex;
 }
 
 .section-our-team__header {

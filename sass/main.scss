@@ -7,6 +7,7 @@
 @use "./components/footer";
 @use "./components/footer-newsletter";
 @use "./utils/vars";
-@use "./components/index-1200";
-@use "./components/footer-1200";
-@use "./components/footer-newsletter-1200";
+@use "./components/media-1200/index-1200";
+@use "./components/media-1200/footer-1200";
+@use "./components/media-1200/footer-newsletter-1200";
+@use "./components/media-1200/page-header-1200";

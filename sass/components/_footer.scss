@@ -15,8 +15,6 @@ footer {
     transition: $transition;
     height: 30px;
     width: 145px;
-    display: flex;
-    align-items: center;
 
     &:focus {
       outline: $outline-focus;

@@ -30,7 +30,7 @@
     margin-right: 46px;
   }
 
-  .header-menu__logo-web {
+  &__logo-web {
     color: getcolor("interact");
     font-family: getfont("raleway");
     font-size: 26px;
@@ -38,7 +38,7 @@
     line-height: 1.19;
   }
 
-  .header-menu__logo-studio {
+  &__logo-studio {
     color: #000000;
     font-family: getfont("raleway");
     font-size: 26px;
@@ -49,84 +49,25 @@
 }
 
 .nav__list {
-  list-style: none;
-  margin-left: 93px;
-}
-
-.nav__link {
-  color: getcolor("main");
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  text-decoration: none;
-  transition: $transition;
-
-  &:hover,
-  &:focus {
-    color: getcolor("interact");
-  }
-}
-
-.nav__link--active {
-  position: relative;
-  color: getcolor("interact");
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: getcolor("interact");
-    position: absolute;
-    top: 44px;
-    left: 0;
-  }
+  display: none;
 }
 
 .header-contact {
-  align-items: center;
-  display: flex;
+  display: none;
 }
 
-.header-contact__email {
-  margin: 0 40px 0 50px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: getcolor("second-info");
-}
-
-.header-contact__tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: getcolor("second-info");
-}
-
-.header-contact__link {
-  color: getcolor("second-info");
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  text-decoration: none;
+.header-mobile-menu__btn {
+  width: 40px;
+  height: 40px;
+  background-color: getcolor("white");
+  border: none;
+  cursor: pointer;
   transition: $transition;
+  margin-top: 22px;
 
-  &:hover,
-  &:focus {
-    color: getcolor("interact");
-
-    .header-contact__icon,
-    & {
-      color: getcolor("interact");
-      fill: getcolor("interact");
-    }
+  &:focus,
+  &:hover {
+    fill: getcolor("interact");
+    transition: $transition;
   }
-}
-
-.header-contact__icon {
-  margin-right: 10px;
-  fill: getcolor("second-info");
-  transition: $transition;
 }
