@@ -1,14 +1,14 @@
 @import "../utils/vars";
 
 .modal__header {
+  width: 370px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: getcolor("main");
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin: 40px 40px 12px 40px;
 }
 
 .modal__form label {
@@ -40,7 +40,7 @@
 
 .modal__input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin: 0;
   margin-left: 40px;
@@ -71,7 +71,7 @@
 }
 
 #modal-comments {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
 
@@ -127,10 +127,12 @@
   }
 
   &-span {
+    width: 336px;
+    white-space: nowrap;
     position: absolute;
     margin-top: 26px;
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
     color: getcolor("second-info");
@@ -148,7 +150,7 @@
 .modal__icon-checked {
   position: absolute;
   left: 57px;
-  bottom: 113px;
+  bottom: 118px;
   opacity: 0;
 }
 

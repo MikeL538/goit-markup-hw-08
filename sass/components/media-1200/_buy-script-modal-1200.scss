@@ -1,0 +1,25 @@
+@media screen and (min-width: 1200px) {
+  .modal__header {
+    width: 448px;
+  }
+
+  .modal__input {
+    width: 448px;
+  }
+
+  #modal-comments {
+    width: 448px;
+  }
+
+  .modal__terms {
+    &-span {
+      width: 393px;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+  }
+
+  .modal__icon-checked {
+    bottom: 142px;
+  }
+}
