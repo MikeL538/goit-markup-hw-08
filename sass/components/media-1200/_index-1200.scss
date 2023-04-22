@@ -3,9 +3,12 @@
     height: 600px;
     background: {
       size: 1600px auto;
+      max-width: 1600px;
+      max-height: 600px;
     }
 
     &__header {
+      margin: 0 auto;
       font-size: 44px;
       line-height: 1.36;
       width: 696px;

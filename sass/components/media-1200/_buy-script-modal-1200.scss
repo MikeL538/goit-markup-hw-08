@@ -1,25 +1,28 @@
 @media screen and (min-width: 1200px) {
   .modal__header {
-    width: 448px;
+    max-width: 448px;
+    margin: 40px 40px 12px 40px;
+  }
+
+  .modal__form label {
+    margin-left: 40px;
   }
 
   .modal__input {
-    width: 448px;
+    max-width: 448px;
+    margin: 0 0 10px 40px;
   }
 
   #modal-comments {
-    width: 448px;
+    max-width: 448px;
+    margin: 0 0 0 40px;
   }
 
   .modal__terms {
     &-span {
-      width: 393px;
-      white-space: nowrap;
+      max-width: 393px;
+
       font-size: 14px;
     }
-  }
-
-  .modal__icon-checked {
-    bottom: 142px;
   }
 }

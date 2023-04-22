@@ -1,18 +1,21 @@
 @import "../utils/vars";
 
 .modal__header {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: getcolor("main");
-  margin: 40px 40px 12px 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 
 .modal__form label {
-  display: block;
+  display: flex;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -39,15 +42,14 @@
 }
 
 .modal__input {
-  display: block;
-  width: 370px;
+  display: flex;
+  max-width: 370px;
+  width: 100%;
   height: 40px;
-  margin: 0;
-  margin-left: 40px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
+  padding: 0 40px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -71,7 +73,9 @@
 }
 
 #modal-comments {
-  width: 370px;
+  display: flex;
+  max-width: 370px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
 
@@ -81,9 +85,9 @@
   border-radius: 4px;
 
   font-size: 12px;
+  margin: 0 auto;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   transition: $transition;
 
   &:focus {
@@ -91,20 +95,55 @@
   }
 }
 
+.modal__terms-span {
+  margin: 20px auto 0 auto;
+  max-width: 336px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: getcolor("second-info");
+
+  a {
+    color: getcolor("interact");
+
+    &:focus {
+      outline: $outline-focus;
+    }
+  }
+}
+
 .hidden-checkbox {
+  display: flex;
   position: absolute;
-  left: 20.3px;
-  bottom: 1.5px;
+  top: 72.5%;
+  left: 9%;
   z-index: 10;
   opacity: 0;
 }
 
+.modal__icon-checkbox {
+  position: absolute;
+  top: 75.5%;
+  left: 9%;
+}
+
+.modal__icon-checked {
+  position: absolute;
+  top: 75.5%;
+  left: 9%;
+  opacity: 0;
+}
+
 .modal__terms {
-  position: relative;
+  position: absolute;
   width: 16px;
   height: 15px;
   margin-top: 20px;
-  margin-left: 38px;
 
   &:checked ~ .modal__icon-checked {
     opacity: 1;
@@ -125,39 +164,11 @@
     stroke: getcolor("main");
     stroke-width: 4px;
   }
-
-  &-span {
-    width: 336px;
-    white-space: nowrap;
-    position: absolute;
-    margin-top: 26px;
-    margin-left: 8px;
-    font-size: 12px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-    color: getcolor("second-info");
-
-    a {
-      color: getcolor("interact");
-
-      &:focus {
-        outline: $outline-focus;
-      }
-    }
-  }
-}
-
-.modal__icon-checked {
-  position: absolute;
-  left: 57px;
-  bottom: 118px;
-  opacity: 0;
 }
 
 .modal__btn-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .modal__btn-send {
@@ -168,7 +179,8 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   height: 50px;
   text-align: center;
   cursor: pointer;
