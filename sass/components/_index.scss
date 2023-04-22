@@ -85,10 +85,11 @@
     }
 
     > svg {
-      width: 450px;
+      max-width: 450px;
+      width: 100%;
       height: 120px;
       > use {
-        transform: translateX(190px) translateY(25px);
+        transform: translateX(center) translateY(center);
       }
     }
     > svg > use:hover {
