@@ -79,5 +79,9 @@
   .section-clients__logo {
     width: 170px;
     height: 92px;
+
+    > use {
+      transform: translate(18.82%, 17.39%);
+    }
   }
 }
