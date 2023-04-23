@@ -248,6 +248,7 @@
   list-style: none;
 
   > li {
+    margin: 0 auto;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: $transition;
