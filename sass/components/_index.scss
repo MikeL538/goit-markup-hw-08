@@ -12,7 +12,7 @@
       url("../images/h1_background.jpg");
     repeat: no-repeat;
     position: center;
-    size: 100% 100%;
+    size: 480px 400px;
     max-width: 480px;
     max-height: 400px;
   }
@@ -154,16 +154,16 @@
   flex-basis: 100%;
   max-width: 100%;
   width: 100%;
-}
 
-.section-our-team__header {
-  font-size: 36px;
-  line-height: 0.86;
-  margin: 0;
-  padding-top: 94px;
-  text-align: center;
-  flex-basis: 100%;
-  width: 100%;
+  &__header {
+    font-size: 36px;
+    line-height: 0.86;
+    margin: 0;
+    padding-top: 60px;
+    text-align: center;
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
 
 .section-our-team__employees {
@@ -181,12 +181,13 @@
     background-color: getcolor("white");
     margin-bottom: 30px;
     margin-right: 30px;
+    height: auto;
 
     > img {
+      margin: 0 auto;
       display: flex;
-      width: 100%;
-      max-height: 460px;
-      height: 100%;
+      max-width: 100%;
+      height: auto;
     }
 
     > h3 {
@@ -226,6 +227,7 @@
   display: block;
   border-radius: 50%;
   margin-right: 10px;
+  margin-bottom: 24px;
   cursor: pointer;
   fill: getcolor("clients-logos");
   transition: $transition;
@@ -246,7 +248,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   list-style: none;
 
@@ -280,7 +282,6 @@
   position: relative;
 
   > use {
-    display: flex;
     position: absolute;
 
     transform: translate(24.76%, 17.39%);

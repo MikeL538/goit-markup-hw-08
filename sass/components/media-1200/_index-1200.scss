@@ -48,6 +48,10 @@
 
   .section-our-team {
     width: 100%;
+
+    &__header {
+      padding-top: 94px;
+    }
   }
 
   .section-our-team__employees {
@@ -70,6 +74,10 @@
 
   .section-our-team__icons {
     margin-top: 5px;
+  }
+
+  .section-our-team__icon {
+    margin-bottom: 30px;
   }
 
   .section-clients__logos {
