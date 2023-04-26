@@ -24,8 +24,9 @@
     font-weight: 900;
     letter-spacing: 0.06em;
     line-height: 1.62;
-    margin: 0;
+    margin: 0 auto;
     text-transform: uppercase;
+    max-width: 385px;
     width: 100%;
   }
 
@@ -56,11 +57,13 @@
 
 .section-lorem__lorem-list {
   list-style-type: none;
+  display: flex;
   flex-wrap: wrap;
 
   > li {
     text-align: left;
     max-width: 100%;
+    margin: 0 auto;
 
     > h2 {
       max-width: 100%;
@@ -90,7 +93,7 @@
       height: 120px;
 
       > use {
-        transform: translate(42.22%, 25%) scale(1);
+        transform: translate(42.22%, 25%);
       }
     }
 
@@ -185,7 +188,6 @@
 
     > img {
       margin: 0 auto;
-      display: flex;
       max-width: 100%;
       height: auto;
     }

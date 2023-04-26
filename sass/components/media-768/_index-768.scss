@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+  .section-main-header {
+    background: {
+      image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/h1_background_768.jpg");
+      size: 768px auto;
+    }
+  }
+
+  .section-lorem__lorem-list {
+    gap: 30px;
+
+    > li {
+      > h2 {
+        text-align: start;
+      }
+
+      > p {
+        max-width: 354px;
+        margin-bottom: 0;
+      }
+
+      > svg {
+        max-width: 354px;
+
+        > use {
+          transform: translateX(40%) translateY(25%);
+        }
+      }
+    }
+  }
+  .section-our-team__employees {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+    > li {
+      max-width: 354px;
+
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+
+      > img {
+        max-width: 354px;
+        max-height: 374px;
+      }
+    }
+  }
+}

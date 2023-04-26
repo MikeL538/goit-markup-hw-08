@@ -8,6 +8,12 @@
 @use "./components/footer";
 @use "./components/footer-newsletter";
 @use "./utils/vars";
+@use "./components/media-768/index-768";
+@use "./components/media-768/footer-768";
+@use "./components/media-768/footer-newsletter-768";
+@use "./components/media-768/page-header-768";
+@use "./components/media-768/buy-script-768";
+@use "./components/media-768/buy-script-modal-768";
 @use "./components/media-1200/index-1200";
 @use "./components/media-1200/footer-1200";
 @use "./components/media-1200/footer-newsletter-1200";

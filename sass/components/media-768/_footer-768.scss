@@ -1,0 +1,27 @@
+@media screen and (min-width: 1200px) {
+  footer {
+    height: 252px;
+  }
+
+  .section-contact-footer {
+    padding-bottom: 0;
+  }
+
+  .container-footer {
+    height: 251px;
+    display: flex;
+    white-space: nowrap;
+    text-align: start;
+    padding-bottom: 0;
+  }
+
+  .join-us__header {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
+
+  .join-us {
+    margin-left: 70px;
+    height: 64px;
+  }
+}
