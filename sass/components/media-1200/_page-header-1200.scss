@@ -1,7 +1,7 @@
 @import "../../utils/vars";
 @media screen and (min-width: 1200px) {
-  
-  .header-menu-burger {
+  .header-burger-menu__btn,
+  .burger-menu__container {
     display: none;
   }
 

@@ -1,10 +1,17 @@
 @media screen and (min-width: 1200px) {
   .section-main-header {
+    display: flex;
+    align-items: center;
+    background-color: #2f303a;
+    flex-direction: column;
     height: 600px;
+    justify-content: center;
     background: {
+      image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/h1_background_1200.jpg");
+      repeat: no-repeat;
+      position: center;
       size: 1600px auto;
-      max-width: 1600px;
-      max-height: 600px;
     }
 
     &__header {

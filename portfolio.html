@@ -61,16 +61,46 @@
               +48 111 111 111</a
             >
           </div>
-          <button class="header-mobile-menu__btn" type="button">
-            <svg>
-              <use
-                href="./images/icons.svg#icon-menu"
-                width="40"
-                height="40"
-              ></use>
+
+          <!--Burger Menu Open Button-->
+          <button class="header-burger-menu__btn" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
         </div>
+      </div>
+
+      <!--Burger Menu-->
+      <div class="burger-menu__container burger-menu__container--visible">
+        <button type="button" class="burger-menu__close-btn">
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-x" width="40" height="40"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="burger-menu__nav-list">
+            <li>
+              <a href="index.html">Agencja</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="burger-menu__nav-list--active"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="#">Kontakty</a></li>
+          </ul>
+        </nav>
+        <ul class="burger-menu__contact-list">
+          <li><a href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+          <li><a href="tel:48111111111"> +48 111 111 111</a></li>
+        </ul>
+        <ul class="burger-menu__socials-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
       </div>
     </header>
 
@@ -461,5 +491,7 @@
         <!--container-footer end-->
       </div>
     </footer>
+
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
