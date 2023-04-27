@@ -1,19 +1,6 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .newsletter {
-    margin-left: 78px;
-    padding-bottom: 0;
-
-    &__header {
-      margin-bottom: 20px;
-    }
-
-    &__input {
-      width: 358px;
-      height: 50px;
-    }
-
-    &__btn {
-      margin-top: 0;
-    }
+    margin: 0 auto;
+    display: flex;
   }
 }

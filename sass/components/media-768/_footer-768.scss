@@ -1,27 +1,32 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   footer {
-    height: 252px;
-  }
-
-  .section-contact-footer {
-    padding-bottom: 0;
+    height: 463px;
   }
 
   .container-footer {
-    height: 251px;
     display: flex;
-    white-space: nowrap;
-    text-align: start;
-    padding-bottom: 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .section-contact-footer {
+    max-width: 350px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .contrainer-footer__address {
+    width: 253px;
+    text-align: center;
+    margin-left: 70px;
   }
 
   .join-us__header {
-    margin-left: 70px;
-    padding-top: 12px;
+    margin-left: 144px;
+    text-align: center;
   }
 
   .join-us {
-    margin-left: 70px;
-    height: 64px;
+    margin-left: 144px;
   }
 }

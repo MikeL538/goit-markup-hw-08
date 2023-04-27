@@ -3,25 +3,42 @@
     height: 252px;
   }
 
+  .container-footer {
+    display: block;
+    align-items: start;
+  }
+
+  .contrainer-footer__address {
+    width: 100%;
+    text-align: start;
+    white-space: nowrap;
+    margin-left: 0;
+  }
+
   .section-contact-footer {
     padding-bottom: 0;
+    margin-left: 0;
   }
 
   .container-footer {
     height: 251px;
     display: flex;
-    white-space: nowrap;
+    flex-wrap: nowrap;
     text-align: start;
     padding-bottom: 0;
   }
 
   .join-us__header {
+    text-align: start;
     margin-left: 70px;
     padding-top: 12px;
+    margin-right: 0;
   }
 
   .join-us {
+    width: 206px;
     margin-left: 70px;
     height: 64px;
+    margin-right: 0;
   }
 }
