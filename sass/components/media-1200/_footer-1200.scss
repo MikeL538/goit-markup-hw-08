@@ -4,27 +4,21 @@
   }
 
   .container-footer {
-    display: block;
+    height: 251px;
+    display: flex;
     align-items: start;
+    flex-wrap: nowrap;
+    text-align: start;
+    padding-bottom: 0;
   }
 
   .contrainer-footer__address {
-    width: 100%;
     text-align: start;
     white-space: nowrap;
     margin-left: 0;
   }
 
   .section-contact-footer {
-    padding-bottom: 0;
-    margin-left: 0;
-  }
-
-  .container-footer {
-    height: 251px;
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: start;
     padding-bottom: 0;
   }
 
@@ -36,7 +30,7 @@
   }
 
   .join-us {
-    width: 206px;
+    max-width: 206px;
     margin-left: 70px;
     height: 64px;
     margin-right: 0;

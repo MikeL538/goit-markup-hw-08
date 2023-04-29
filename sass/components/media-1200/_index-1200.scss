@@ -86,13 +86,13 @@
       padding-bottom: 44px;
       margin-bottom: 0;
       margin-right: 0;
-      width: 270px;
+      max-width: 270px;
       height: 428px;
       gap: 30px;
 
       > img {
-        width: 270px;
-        height: 260px;
+        max-width: 270px;
+        max-height: 260px;
       }
     }
   }
@@ -111,7 +111,6 @@
 
   .section-clients__logo {
     width: 170px;
-    height: 92px;
 
     > use {
       transform: translate(18.82%, 17.39%);

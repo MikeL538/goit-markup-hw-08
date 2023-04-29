@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) {
   .modal__header {
-    max-width: 370px;
     margin: 40px 40px 12px 40px;
   }
 
@@ -9,20 +8,7 @@
   }
 
   .hidden-checkbox {
-    position: absolute;
     top: 74%;
     left: 7%;
-  }
-
-  .modal__icon-checkbox {
-    position: absolute;
-    top: 77%;
-    left: 9%;
-  }
-
-  .modal__icon-checked {
-    position: absolute;
-    top: 77%;
-    left: 9%;
   }
 }

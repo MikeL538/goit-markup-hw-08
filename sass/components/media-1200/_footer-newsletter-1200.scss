@@ -3,13 +3,8 @@
     margin-left: 78px;
     padding-bottom: 0;
 
-    &__header {
-      margin-bottom: 20px;
-    }
-
     &__input {
-      width: 358px;
-      height: 50px;
+      max-width: 358px;
     }
 
     &__btn {

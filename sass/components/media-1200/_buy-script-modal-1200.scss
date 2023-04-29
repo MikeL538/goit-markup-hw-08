@@ -1,11 +1,6 @@
 @media screen and (min-width: 1200px) {
   .modal__header {
     max-width: 448px;
-    margin: 40px 40px 12px 40px;
-  }
-
-  .modal__form label {
-    margin-left: 40px;
   }
 
   .modal__input {
@@ -21,17 +16,13 @@
   .modal__terms {
     &-span {
       max-width: 393px;
-
       font-size: 14px;
     }
   }
 
   .hidden-checkbox {
-    position: absolute;
     top: 72%;
     left: 7%;
-    z-index: 10;
-    opacity: 0;
   }
 
   .modal__icon-checkbox {
@@ -44,6 +35,5 @@
     position: absolute;
     top: 75.5%;
     left: 8.5%;
-    opacity: 0;
   }
 }
