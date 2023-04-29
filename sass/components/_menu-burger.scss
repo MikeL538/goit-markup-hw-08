@@ -1,157 +1,159 @@
 @import "../utils/vars";
 
-.header-burger-menu__btn {
-  background-color: getcolor("white");
-  border-radius: 50%;
-  max-width: 40px;
-  max-height: 40px;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  border: none;
-  margin: 22px 15px;
+@media (max-width: 767px) {
+  .header-burger-menu__btn {
+    background-color: getcolor("white");
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    margin: 22px 15px;
 
-  &:hover,
-  &:focus {
-    fill: getcolor("interact");
-  }
-}
-
-.burger-menu__container {
-  max-width: 480px;
-  width: 100%;
-  height: 100vmax;
-  background-color: getcolor("white");
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(100%, -50%);
-  z-index: 10;
-  transition: transform 250ms ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-
-.burger-menu__container.is-open {
-  transform: translate(-50%, -50%);
-}
-
-// .burger-menu__container--visible {
-//   display: flex;
-//   transition: 250ms ease-in-out;
-// }
-
-.burger-menu__close-btn {
-  position: absolute;
-  top: 2%;
-  left: 87%;
-  border-radius: 50%;
-  border: none;
-  background-color: getcolor("white");
-  cursor: pointer;
-
-  > svg > use {
-    transform: translate(10%, 20%);
-  }
-
-  &:hover,
-  &:focus {
-    fill: getcolor("interact");
-  }
-}
-
-.burger-menu__nav-list {
-  margin-top: 60px;
-  list-style: none;
-
-  > li {
-    margin-bottom: 38px;
-    margin-left: 40px;
-
-    > a {
-      color: getcolor("main");
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 1.18;
-      letter-spacing: 0.02em;
-
-      &.burger-menu__nav-list--active {
-        color: getcolor("interact");
-      }
-
-      &:hover,
-      &:focus {
-        color: getcolor("interact");
-      }
+    &:hover,
+    &:focus {
+      fill: getcolor("interact");
     }
   }
-}
 
-.burger-menu__contact-list {
-  list-style: none;
-  height: auto;
-  margin-top: auto;
+  .burger-menu__container {
+    max-width: 480px;
+    width: 100%;
+    height: 100vmax;
+    background-color: getcolor("white");
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    z-index: 10;
+    transition: transform 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
 
-  > li {
-    margin-bottom: 32px;
-    margin-left: 40px;
+  .burger-menu__container.is-open {
+    transform: translate(-50%, -50%);
+  }
 
-    > a {
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: getcolor("second-info");
-      text-decoration: none;
+  // .burger-menu__container--visible {
+  //   display: flex;
+  //   transition: 250ms ease-in-out;
+  // }
 
-      &[href^="tel:"] {
-        font-size: 34px;
-        line-height: 1.25;
-      }
+  .burger-menu__close-btn {
+    position: absolute;
+    top: 2%;
+    left: 87%;
+    border-radius: 50%;
+    border: none;
+    background-color: getcolor("white");
+    cursor: pointer;
 
-      &[href^="mailto:"] {
-        font-size: 24px;
-        line-height: 1.16;
-      }
+    > svg > use {
+      transform: translate(10%, 20%);
+    }
 
-      &:hover,
-      &:focus {
-        color: getcolor("interact");
-      }
+    &:hover,
+    &:focus {
+      fill: getcolor("interact");
     }
   }
-}
 
-.burger-menu__socials-list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin-left: 40px;
-  margin-bottom: 6%;
+  .burger-menu__nav-list {
+    margin-top: 60px;
+    list-style: none;
 
-  > li {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 0 10px;
+    > li {
+      margin-bottom: 38px;
+      margin-left: 40px;
 
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      border-right: none;
-    }
-
-    > a {
-      font-size: 18px;
-      line-height: 1.22;
-      letter-spacing: 0.02em;
-      color: getcolor("interact");
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
+      > a {
         color: getcolor("main");
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+
+        &.burger-menu__nav-list--active {
+          color: getcolor("interact");
+        }
+
+        &:hover,
+        &:focus {
+          color: getcolor("interact");
+        }
+      }
+    }
+  }
+
+  .burger-menu__contact-list {
+    list-style: none;
+    height: auto;
+    margin-top: auto;
+
+    > li {
+      margin-bottom: 32px;
+      margin-left: 40px;
+
+      > a {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: getcolor("second-info");
+        text-decoration: none;
+
+        &[href^="tel:"] {
+          font-size: 34px;
+          line-height: 1.25;
+        }
+
+        &[href^="mailto:"] {
+          font-size: 24px;
+          line-height: 1.16;
+        }
+
+        &:hover,
+        &:focus {
+          color: getcolor("interact");
+        }
+      }
+    }
+  }
+
+  .burger-menu__socials-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-left: 40px;
+    margin-bottom: 6%;
+
+    > li {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding: 0 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      > a {
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: getcolor("interact");
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          color: getcolor("main");
+        }
       }
     }
   }
