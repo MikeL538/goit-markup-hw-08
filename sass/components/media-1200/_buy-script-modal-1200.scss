@@ -25,4 +25,25 @@
       font-size: 14px;
     }
   }
+
+  .hidden-checkbox {
+    position: absolute;
+    top: 72%;
+    left: 7%;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  .modal__icon-checkbox {
+    position: absolute;
+    top: 75.5%;
+    left: 8.5%;
+  }
+
+  .modal__icon-checked {
+    position: absolute;
+    top: 75.5%;
+    left: 8.5%;
+    opacity: 0;
+  }
 }

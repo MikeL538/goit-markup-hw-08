@@ -7,4 +7,25 @@
   .modal__form label {
     margin-left: 40px;
   }
+
+  .hidden-checkbox {
+    position: absolute;
+    top: 74%;
+    left: 7%;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  .modal__icon-checkbox {
+    position: absolute;
+    top: 77%;
+    left: 9%;
+  }
+
+  .modal__icon-checked {
+    position: absolute;
+    top: 77%;
+    left: 9%;
+    opacity: 0;
+  }
 }
