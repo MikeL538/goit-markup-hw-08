@@ -1,20 +1,4 @@
 @media screen and (min-width: 768px) {
-  .section-main-header {
-    background: {
-      image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/h1_background_768.jpg");
-      size: 768px auto;
-    }
-
-    @media only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      body {
-        background-image: url("h1_background_1200.jpg");
-        background-size: cover;
-      }
-    }
-  }
-
   .section-lorem__lorem-list {
     gap: 30px;
 
