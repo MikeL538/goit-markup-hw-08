@@ -2,7 +2,21 @@
   .section-main-header {
     background: {
       image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/h1_background_768.jpg");
+        url("../images/h1_background@2.jpg");
+      size: 768px 400px;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 3dppx) {
+    .section-main-header {
+      background: {
+        image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url("../images/h1_background@3.jpg");
+        size: cover;
+      }
     }
   }
 

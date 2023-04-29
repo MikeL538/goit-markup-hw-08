@@ -9,10 +9,10 @@
   justify-content: center;
   background: {
     image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/h1_background_480.jpg");
+      url("../images/h1_background.jpg");
     repeat: no-repeat;
     position: center;
-    // size: 480px 400px;
+    size: cover;
   }
 
   &__header {
@@ -41,7 +41,8 @@
   .section-main-header {
     background: {
       image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/h1_background_768.jpg");
+        url("../images/h1_background@2.jpg");
+      size: cover;
     }
   }
 }
@@ -53,8 +54,8 @@
   .section-main-header {
     background: {
       image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/h1_background_1200.jpg");
-      size: 1600px auto;
+        url("../images/h1_background@3.jpg");
+      size: cover;
     }
   }
 }
