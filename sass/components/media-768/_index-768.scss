@@ -1,39 +1,45 @@
 @media screen and (min-width: 768px) {
-  .section-lorem__lorem-list {
-    gap: 30px;
+  .section-main-header {
+    background: {
+      image: url("../images/h1_background_768.jpg");
+    }
 
-    > li {
-      > h2 {
-        text-align: start;
-      }
+    .section-lorem__lorem-list {
+      gap: 30px;
 
-      > p {
-        max-width: 354px;
-        margin-bottom: 0;
-      }
+      > li {
+        > h2 {
+          text-align: start;
+        }
 
-      > svg {
-        max-width: 354px;
+        > p {
+          max-width: 354px;
+          margin-bottom: 0;
+        }
 
-        > use {
-          transform: translateX(40%) translateY(25%);
+        > svg {
+          max-width: 354px;
+
+          > use {
+            transform: translateX(40%) translateY(25%);
+          }
         }
       }
     }
-  }
 
-  .section-our-team__employees {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    .section-our-team__employees {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
 
-    > li {
-      max-width: 354px;
-
-      > img {
+      > li {
         max-width: 354px;
-        max-height: 374px;
+
+        > img {
+          max-width: 354px;
+          max-height: 374px;
+        }
       }
     }
   }

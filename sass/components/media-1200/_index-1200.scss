@@ -1,114 +1,128 @@
 @media screen and (min-width: 1200px) {
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-device-pixel-ratio: 2) {
+    .section-main-header {
+      background: {
+        image: url("../images/h1_background_1200.jpg");
+        size: 1600px auto;
+      }
+    }
+  }
+
   .section-main-header {
     height: 600px;
+    background: {
+      image: url("../images/h1_background_1200.jpg");
+      size: 1600px auto;
+    }
 
     &__header {
       font-size: 44px;
       line-height: 1.36;
       max-width: 696px;
     }
-  }
 
-  .section-lorem__lorem-list {
-    flex-wrap: nowrap;
+    .section-lorem__lorem-list {
+      flex-wrap: nowrap;
 
-    > li {
-      > svg {
-        max-width: 270px;
+      > li {
+        > svg {
+          max-width: 270px;
 
-        > use {
-          transform: translateX(37.9%) translateY(21%);
+          > use {
+            transform: translateX(37.9%) translateY(21%);
+          }
         }
       }
     }
-  }
 
-  .section-offer {
-    display: block;
-    padding-top: 0;
-  }
+    .section-offer {
+      display: block;
+      padding-top: 0;
+    }
 
-  .section-offer__offer-header {
-    font-size: 36px;
-    line-height: 0.86;
-    margin: 0;
-    text-align: center;
-    max-width: 100%;
-    flex-basis: 100%;
-  }
+    .section-offer__offer-header {
+      font-size: 36px;
+      line-height: 0.86;
+      margin: 0;
+      text-align: center;
+      max-width: 100%;
+      flex-basis: 100%;
+    }
 
-  .section-offer__offer-pictures {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 0;
-    margin-top: 50px;
-    list-style: none;
-  }
-
-  .section-offer__offer-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-
-    text-transform: uppercase;
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    background: rgba(47, 48, 58, 0.8);
-    bottom: 0;
-    color: white;
-  }
-
-  .section-offer__offer-item {
-    position: relative;
-  }
-
-  .section-our-team__header {
-    padding-top: 94px;
-  }
-
-  .section-our-team__employees {
-    gap: 30px;
-    flex-wrap: nowrap;
-    margin: 0;
-    margin-top: 50px;
-
-    > li {
-      padding-bottom: 44px;
-      margin-bottom: 0;
-      margin-right: 0;
-      max-width: 270px;
-      height: 428px;
+    .section-offer__offer-pictures {
+      display: flex;
       gap: 30px;
+      margin-bottom: 0;
+      margin-top: 50px;
+      list-style: none;
+    }
 
-      > img {
+    .section-offer__offer-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+
+      text-transform: uppercase;
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      background: rgba(47, 48, 58, 0.8);
+      bottom: 0;
+      color: white;
+    }
+
+    .section-offer__offer-item {
+      position: relative;
+    }
+
+    .section-our-team__header {
+      padding-top: 94px;
+    }
+
+    .section-our-team__employees {
+      gap: 30px;
+      flex-wrap: nowrap;
+      margin: 0;
+      margin-top: 50px;
+
+      > li {
+        padding-bottom: 44px;
+        margin-bottom: 0;
+        margin-right: 0;
         max-width: 270px;
-        max-height: 260px;
+        height: 428px;
+        gap: 30px;
+
+        > img {
+          max-width: 270px;
+          max-height: 260px;
+        }
       }
     }
-  }
 
-  .section-our-team__icons {
-    margin-top: 5px;
-  }
+    .section-our-team__icons {
+      margin-top: 5px;
+    }
 
-  .section-our-team__icon {
-    margin-bottom: 30px;
-  }
+    .section-our-team__icon {
+      margin-bottom: 30px;
+    }
 
-  .section-clients__logos {
-    margin-bottom: 0;
-  }
+    .section-clients__logos {
+      margin-bottom: 0;
+    }
 
-  .section-clients__logo {
-    width: 170px;
+    .section-clients__logo {
+      width: 170px;
 
-    > use {
-      transform: translate(18.82%, 17.39%);
+      > use {
+        transform: translate(18.82%, 17.39%);
+      }
     }
   }
 }
