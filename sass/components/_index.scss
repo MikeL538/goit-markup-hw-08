@@ -40,7 +40,8 @@
   screen and (min-resolution: 2dppx) {
   .section-main-header {
     background: {
-      image: url("../images/h1_background_768.jpg");
+      image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/h1_background_768.jpg");
     }
   }
 }
@@ -51,7 +52,8 @@
   screen and (min-resolution: 3dppx) {
   .section-main-header {
     background: {
-      image: url("../images/h1_background_1200.jpg");
+      image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/h1_background_1200.jpg");
       size: 1600px auto;
     }
   }
