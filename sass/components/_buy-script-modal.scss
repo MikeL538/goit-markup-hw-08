@@ -87,6 +87,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   transition: $transition;
+  resize: none;
 
   &:focus {
     border-color: getcolor("interact");
@@ -117,10 +118,10 @@
 
 .hidden-checkbox {
   position: absolute;
-  top: 74%;
-  left: 9%;
+  top: 73.5%;
+  left: 7.1%;
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
 }
 
 .modal__icon-checkbox {

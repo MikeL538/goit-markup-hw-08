@@ -17,6 +17,14 @@
     max-height: 400px;
   }
 
+  @media only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    body {
+      background-image: url("h1_background_1200.jpg");
+      background-size: cover;
+    }
+  }
+
   &__header {
     text-align: center;
     color: getcolor("white");
