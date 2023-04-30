@@ -5,6 +5,10 @@
     display: none;
   }
 
+  .header-menu__link {
+    margin-right: 83px;
+  }
+
   .header-menu__logo-web {
     font-size: 24px;
   }
@@ -14,11 +18,11 @@
   }
 
   .nav__list {
+    width: 282px;
     display: flex;
-    margin-left: 83px;
+    margin-right: 101px;
 
     > li {
-      max-width: 59px;
       margin-right: 60px;
     }
   }
@@ -30,7 +34,6 @@
     line-height: 1.14;
     text-decoration: none;
     transition: $transition;
-    margin-right: 60px;
 
     &:hover,
     &:focus {

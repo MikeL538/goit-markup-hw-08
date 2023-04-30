@@ -1,7 +1,13 @@
 @import "../../utils/vars";
 @media screen and (min-width: 1200px) {
+  .header-menu__link {
+    margin-right: 93px;
+  }
+
   .nav__list {
-    margin-left: 93px;
+    > li {
+      margin-right: 46px;
+    }
   }
 
   .nav__link {
