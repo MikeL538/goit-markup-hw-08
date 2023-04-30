@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 768px) {
   .projects__list {
+    justify-content: flex-start;
     > li {
       margin: 0;
       max-width: 354px;
