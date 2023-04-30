@@ -107,6 +107,10 @@
 
   .section-clients__logos {
     margin-bottom: 0;
+
+    > li {
+      margin: 0;
+    }
   }
 
   .section-clients__logo {

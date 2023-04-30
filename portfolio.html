@@ -49,13 +49,21 @@
           </div>
           <div class="header-contact">
             <a href="mailto:info@devstudio.com" class="header-contact__link">
-              <svg class="header-contact__icon" width="16" height="12">
+              <svg
+                class="header-contact__icon header-contact__icon-envelope"
+                width="14"
+                height="10"
+              >
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
             <a href="tel:48111111111" class="header-contact__link">
-              <svg class="header-contact__icon" width="16" height="12">
+              <svg
+                class="header-contact__icon header-contact__icon-phone"
+                width="10"
+                height="14"
+              >
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -63,7 +71,12 @@
           </div>
 
           <!--Burger Menu Open Button-->
-          <button class="header-burger-menu__btn" type="button">
+          <button
+            class="header-burger-menu__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="40" height="40">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -72,14 +85,17 @@
       </div>
 
       <!--Burger Menu-->
-      <div class="burger-menu__container burger-menu__container--visible">
+      <div
+        class="burger-menu__container burger-menu__container--visible"
+        id="mobile-menu"
+      >
         <button type="button" class="burger-menu__close-btn">
           <svg width="30" height="30">
             <use href="./images/icons.svg#icon-x" width="40" height="40"></use>
           </svg>
         </button>
         <nav>
-          <ul class="burger-menu__nav-list">
+          <ul class="burger-menu__nav-list mobile-menu">
             <li>
               <a href="index.html">Agencja</a>
             </li>
@@ -92,8 +108,10 @@
           </ul>
         </nav>
         <ul class="burger-menu__contact-list">
-          <li><a href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-          <li><a href="tel:48111111111"> +48 111 111 111</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:48111111111">+48 111 111 111</a></li>
         </ul>
         <ul class="burger-menu__socials-list">
           <li><a href="#">Instagram</a></li>
@@ -146,8 +164,6 @@
                       <img
                         src="images/technocrack.jpg"
                         alt="Screen ze strony biznesowej pokazujący pracowników firmy. Widać na nim trzy osoby oraz opis czym się zajmują."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -173,8 +189,6 @@
                       <img
                         src="images/grafika_new_orlean_vs_golden_star.jpg"
                         alt="Grafika przedstawiająca dwóch koszywkarzy podczas rozgrywki."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -197,12 +211,8 @@
                           niezabezpieczone serwery konkurencji
                         </p>
                       </figcaption>
-                      <img
-                        src="images/restauracja_seafood.jpg"
-                        alt="Logo restauracji SeaFood"
-                        width="370"
-                        height="294"
-                      />
+                      <img src="images/restauracja_seafood.jpg" alt="Logo
+                      restauracji SeaFood" " />
                     </div>
                     <div class="projects__card">
                       <h3>Restauracja Seafood</h3>
@@ -227,8 +237,6 @@
                       <img
                         src="images/projekt_prime.jpg"
                         alt="Słuchawki nauszne."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -251,12 +259,7 @@
                           niezabezpieczone serwery konkurencji
                         </p>
                       </figcaption>
-                      <img
-                        src="images/project_boxes.jpg"
-                        alt="Dwa pudełka"
-                        width="370"
-                        height="294"
-                      />
+                      <img src="images/project_boxes.jpg" alt="Dwa pudełka" />
                     </div>
                     <div class="projects__card">
                       <h3>Projekt Boxes</h3>
@@ -281,8 +284,6 @@
                       <img
                         src="images/inspiration_has_no_borders.jpg"
                         alt="Zdjęcie przedstawia stworzoną międzynarodową stronę internetową."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -308,8 +309,6 @@
                       <img
                         src="images/magazyn_limited_edition.jpg"
                         alt="Zdjęcie zaprojektowanego magazynu."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -335,8 +334,6 @@
                       <img
                         src="images/project_lab.jpg"
                         alt="Zdjęcie etykiety Project LAB."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">
@@ -362,8 +359,6 @@
                       <img
                         src="images/growing_business.jpg"
                         alt="Zdjęcie przedstawiające aplikację Growing Business."
-                        width="370"
-                        height="294"
                       />
                     </div>
                     <div class="projects__card">

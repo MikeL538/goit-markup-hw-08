@@ -1,0 +1,24 @@
+@import "../../utils/vars";
+
+@media screen and (min-width: 768px) {
+  .projects__list {
+    > li {
+      margin: 0;
+      max-width: 354px;
+    }
+  }
+
+  .projects__description {
+    width: 354px;
+  }
+
+  .projects__box {
+    > img {
+      width: 354px;
+    }
+  }
+
+  .projects__card {
+    height: 146px;
+  }
+}

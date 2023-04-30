@@ -1,0 +1,18 @@
+@import "../../utils/vars";
+
+.projects__list {
+  > li {
+    margin: 0;
+    max-width: 354px;
+  }
+}
+
+.projects__description {
+  width: 354px;
+}
+
+.projects__box {
+  > img {
+    width: 354px;
+  }
+}

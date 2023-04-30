@@ -1,5 +1,6 @@
 @media screen and (min-width: 1200px) {
   .newsletter {
+    display: block;
     margin-left: 78px;
     padding-bottom: 0;
 
@@ -9,6 +10,10 @@
 
     &__btn {
       margin-top: 0;
+    }
+
+    &__header {
+      font-size: 14px;
     }
   }
 

@@ -37,15 +37,10 @@
     transform: translate(-50%, -50%);
   }
 
-  // .burger-menu__container--visible {
-  //   display: flex;
-  //   transition: 250ms ease-in-out;
-  // }
-
   .burger-menu__close-btn {
     position: absolute;
-    top: 2%;
-    left: 87%;
+    top: 20px;
+    right: 25px;
     border-radius: 50%;
     border: none;
     background-color: getcolor("white");
@@ -93,6 +88,8 @@
     list-style: none;
     height: auto;
     margin-top: auto;
+    display: flex;
+    flex-direction: column-reverse;
 
     > li {
       margin-bottom: 32px;
@@ -107,16 +104,22 @@
         &[href^="tel:"] {
           font-size: 34px;
           line-height: 1.25;
+          color: getcolor("interact");
+
+          &:hover,
+          &:focus {
+            color: getcolor("second-info");
+          }
         }
 
         &[href^="mailto:"] {
           font-size: 24px;
           line-height: 1.16;
-        }
 
-        &:hover,
-        &:focus {
-          color: getcolor("interact");
+          &:hover,
+          &:focus {
+            color: getcolor("interact");
+          }
         }
       }
     }

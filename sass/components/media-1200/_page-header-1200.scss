@@ -21,8 +21,8 @@
     flex-direction: row;
     align-items: center;
 
-    a[href^="tel"] {
-      margin-top: 0px;
+    a[href^="mailto"] {
+      margin-bottom: 0px;
     }
   }
 
