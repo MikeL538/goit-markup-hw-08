@@ -23,6 +23,32 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: 500ms ease-in-out;
+
+  &__close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: getcolor("white");
+    cursor: pointer;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    &:focus,
+    &:hover {
+      fill: getcolor("interact");
+      transition: $transition;
+    }
+
+    svg {
+      position: relative;
+      top: 6px;
+      left: 5px;
+      border-radius: 50%;
+    }
+  }
 }
 
 div.is-hidden {
@@ -34,32 +60,6 @@ div.is-hidden {
     .modal {
       transform: translateY(-50%);
     }
-  }
-}
-
-.modal__close-btn {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: getcolor("white");
-  cursor: pointer;
-  border: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  &:focus,
-  &:hover {
-    fill: getcolor("interact");
-    transition: $transition;
-  }
-
-  svg {
-    position: relative;
-    top: 6px;
-    left: 5px;
-    border-radius: 50%;
   }
 }
 

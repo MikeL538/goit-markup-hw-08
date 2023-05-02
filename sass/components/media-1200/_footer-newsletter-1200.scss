@@ -14,11 +14,11 @@
 
     &__header {
       font-size: 14px;
+      text-align: start;
     }
-  }
 
-  .newsletter__form {
-    display: flex;
-    align-items: center;
+    &__form {
+      display: flex;
+    }
   }
 }

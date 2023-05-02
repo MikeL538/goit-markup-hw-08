@@ -9,6 +9,13 @@
     flex-wrap: wrap;
   }
 
+  .container-footer__logo {
+    &-web,
+    &-studio {
+      font-size: 26px;
+    }
+  }
+
   .section-contact-footer {
     max-width: 350px;
     margin: 0;

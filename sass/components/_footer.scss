@@ -24,7 +24,7 @@ footer {
   &__logo-web {
     color: getcolor("interact");
     font-family: getfont("raleway");
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.19;
     text-decoration: none;
@@ -33,7 +33,7 @@ footer {
   &__logo-studio {
     color: getcolor("white");
     font-family: getfont("raleway");
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.19;
     text-decoration: none;
@@ -89,15 +89,15 @@ footer {
   }
 }
 
-.join-us__header {
-  color: getcolor("white");
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .join-us {
   display: flex;
   justify-content: center;
+
+  &__header {
+    color: getcolor("white");
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 
   &__icons {
     display: flex;

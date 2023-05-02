@@ -20,11 +20,7 @@
   .nav__list {
     width: 282px;
     display: flex;
-    margin-right: 101px;
-
-    > li {
-      margin-right: 60px;
-    }
+    justify-content: space-between;
   }
 
   .nav__link {
@@ -74,14 +70,12 @@
     transition: $transition;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:hover svg,
+    &:focus svg {
+      transition: $transition;
       color: getcolor("interact");
-
-      .header-contact__icon {
-        transition: $transition;
-        color: getcolor("interact");
-        fill: getcolor("interact");
-      }
+      fill: getcolor("interact");
     }
   }
 

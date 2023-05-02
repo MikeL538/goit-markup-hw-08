@@ -8,11 +8,11 @@
     display: flex;
     align-items: start;
     flex-wrap: nowrap;
-    text-align: start;
     padding-bottom: 0;
   }
 
   .contrainer-footer__address {
+    // Po połączeniu z container-footer przestaje działać.
     text-align: start;
     white-space: nowrap;
     margin-left: 0;
@@ -22,18 +22,18 @@
     padding-bottom: 0;
   }
 
-  .join-us__header {
-    text-align: start;
-    margin-left: 70px;
-    padding-top: 12px;
-    margin-right: 0;
-    font-size: 14px;
-  }
-
   .join-us {
     max-width: 206px;
     margin-left: 70px;
     height: 64px;
     margin-right: 0;
+
+    &__header {
+      text-align: start;
+      margin-left: 70px;
+      padding-top: 12px;
+      margin-right: 0;
+      font-size: 14px;
+    }
   }
 }

@@ -4,14 +4,15 @@
     margin-right: 93px;
   }
 
-  .nav__list {
-    > li {
-      margin-right: 46px;
+  .header-menu__logo {
+    &-web,
+    &-studio {
+      font-size: 26px;
     }
   }
 
-  .nav__link {
-    margin-right: 46px;
+  .nav__list {
+    width: 254px;
   }
 
   .header-contact__link {
