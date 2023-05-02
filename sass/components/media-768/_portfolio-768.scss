@@ -2,24 +2,23 @@
 
 @media screen and (min-width: 768px) {
   .projects__list {
-    justify-content: flex-start;
     > li {
-      margin: 0;
       max-width: 354px;
+      max-height: 404px;
+
+      &:last-child {
+        display: block;
+      }
     }
   }
 
   .projects__description {
-    width: 354px;
+    max-width: 354px;
   }
 
   .projects__box {
     > img {
-      width: 354px;
+      max-width: 354px;
     }
-  }
-
-  .projects__card {
-    height: 146px;
   }
 }

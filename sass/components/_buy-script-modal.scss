@@ -29,19 +29,15 @@
   }
 }
 
-// .modal__form-div {
-//   position: relative;
-// }
-
 .modal__icon {
   position: absolute;
   width: 13px;
   height: 13px;
   fill: #212121;
-  top: 32px;
+  top: 31px;
   left: 55px;
 
-  &--position {
+  &-person--position {
     top: 40px;
     left: 55px;
   }
