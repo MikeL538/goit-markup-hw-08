@@ -6,6 +6,14 @@
       max-width: 354px;
       max-height: 404px;
 
+      &:first-of-type {
+        max-height: 440px;
+      }
+
+      &:nth-child(2) {
+        max-height: 440px;
+      }
+
       &:last-child {
         display: block;
       }
@@ -13,12 +21,16 @@
   }
 
   .projects__description {
-    max-width: 354px;
+    max-width: 370px;
   }
 
   .projects__box {
     > img {
       max-width: 354px;
     }
+  }
+
+  .projects__list > li:first-child .projects__card {
+    height: 155px;
   }
 }
