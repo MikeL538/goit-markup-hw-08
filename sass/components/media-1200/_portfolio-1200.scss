@@ -6,6 +6,14 @@
       margin: 0;
       max-width: 370px;
 
+      &:first-of-type {
+        max-height: 404px;
+      }
+
+      &:nth-child(2) {
+        max-height: 404px;
+      }
+
       &:last-child {
         display: none;
       }
@@ -14,7 +22,11 @@
 
   .projects__box {
     > img {
-      width: 354px;
+      max-width: 370px;
     }
+  }
+
+  .projects__list > li:first-child .projects__card {
+    height: 100%;
   }
 }
